@@ -1,502 +1,102 @@
 [
-  {
-    "id": 1,
-    "name": "Sữa rửa mặt Cetaphil 500ml",
-    "categoryid": 1
-  },
-  {
-    "id": 2,
-    "name": "Nước tẩy trang Bioderma Pink",
-    "categoryid": 1
-  },
-  {
-    "id": 3,
-    "name": "Serum La Roche-Posay Effaclar",
-    "categoryid": 1
-  },
-  {
-    "id": 4,
-    "name": "Kem dưỡng ẩm Neutrogena Aqua",
-    "categoryid": 1
-  },
-  {
-    "id": 5,
-    "name": "Mặt nạ đất sét Kiehl's 125ml",
-    "categoryid": 1
-  },
-  {
-    "id": 6,
-    "name": "Toner Klairs Supple Preparation",
-    "categoryid": 1
-  },
-  {
-    "id": 7,
-    "name": "Kem chống nắng Anessa Perfect",
-    "categoryid": 1
-  },
-  {
-    "id": 8,
-    "name": "Tinh chất Paula's Choice BHA 2%",
-    "categoryid": 1
-  },
-  {
-    "id": 9,
-    "name": "Xịt khoáng Vichy 300ml",
-    "categoryid": 1
-  },
-  {
-    "id": 10,
-    "name": "Kem mắt Estee Lauder",
-    "categoryid": 1
-  },
-  {
-    "id": 11,
-    "name": "Dầu gội Moroccanoil Moisture",
-    "categoryid": 2
-  },
-  {
-    "id": 12,
-    "name": "Dầu xả TRESemmé Keratin Smooth",
-    "categoryid": 2
-  },
-  {
-    "id": 13,
-    "name": "Tinh dầu dưỡng tóc L'Oreal",
-    "categoryid": 2
-  },
-  {
-    "id": 14,
-    "name": "Xịt dưỡng tóc Double Rich",
-    "categoryid": 2
-  },
-  {
-    "id": 15,
-    "name": "Mặt nạ ủ tóc Fino Shiseido",
-    "categoryid": 2
-  },
-  {
-    "id": 16,
-    "name": "Dầu gội khô Batiste Original",
-    "categoryid": 2
-  },
-  {
-    "id": 17,
-    "name": "Gel tạo kiểu tóc Tigi Bed Head",
-    "categoryid": 2
-  },
-  {
-    "id": 18,
-    "name": "Serum mọc tóc Weilaiya",
-    "categoryid": 2
-  },
-  {
-    "id": 19,
-    "name": "Kem xả Dove phục hồi hư tổn",
-    "categoryid": 2
-  },
-  {
-    "id": 20,
-    "name": "Dầu gội trị gàu Selsun",
-    "categoryid": 2
-  },
-  {
-    "id": 21,
-    "name": "Kem nền Maybelline Fit Me",
-    "categoryid": 3
-  },
-  {
-    "id": 22,
-    "name": "Phấn phủ bột Innisfree",
-    "categoryid": 3
-  },
-  {
-    "id": 23,
-    "name": "Mascara L'Oreal Lash Paradise",
-    "categoryid": 3
-  },
-  {
-    "id": 24,
-    "name": "Bảng mắt 3CE Multi Eye Color",
-    "categoryid": 3
-  },
-  {
-    "id": 25,
-    "name": "Kẻ mắt nước Kiss Me Heroine",
-    "categoryid": 3
-  },
-  {
-    "id": 26,
-    "name": "Phấn má hồng Canmake Tokyo",
-    "categoryid": 3
-  },
-  {
-    "id": 27,
-    "name": "Kem lót mờ lỗ chân lông Benefit",
-    "categoryid": 3
-  },
-  {
-    "id": 28,
-    "name": "Che khuyết điểm The Saem",
-    "categoryid": 3
-  },
-  {
-    "id": 29,
-    "name": "Xịt giữ lớp nền MAC Prep+Prime",
-    "categoryid": 3
-  },
-  {
-    "id": 30,
-    "name": "Bút kẻ mày The Face Shop",
-    "categoryid": 3
-  },
-  {
-    "id": 31,
-    "name": "Sữa tắm dưỡng ẩm Dove",
-    "categoryid": 4
-  },
-  {
-    "id": 32,
-    "name": "Sữa dưỡng thể Vaseline 50X",
-    "categoryid": 4
-  },
-  {
-    "id": 33,
-    "name": "Tẩy tế bào chết Cafe Cocoon",
-    "categoryid": 4
-  },
-  {
-    "id": 34,
-    "name": "Kem dưỡng tay L'Occitane",
-    "categoryid": 4
-  },
-  {
-    "id": 35,
-    "name": "Lăn khử mùi Vichy Laboratoires",
-    "categoryid": 4
-  },
-  {
-    "id": 36,
-    "name": "Kem trị rạn da Bio-Oil",
-    "categoryid": 4
-  },
-  {
-    "id": 37,
-    "name": "Bơ dưỡng thể The Body Shop",
-    "categoryid": 4
-  },
-  {
-    "id": 38,
-    "name": "Muối tắm sữa bò A Bonne",
-    "categoryid": 4
-  },
-  {
-    "id": 39,
-    "name": "Dầu dưỡng thể Neutrogena",
-    "categoryid": 4
-  },
-  {
-    "id": 40,
-    "name": "Sữa tắm nước hoa Tesori d'Oriente",
-    "categoryid": 4
-  },
-  {
-    "id": 41,
-    "name": "Bàn chải điện Oral-B Pro 600",
-    "categoryid": 5
-  },
-  {
-    "id": 42,
-    "name": "Kem đánh răng Marvis Classic",
-    "categoryid": 5
-  },
-  {
-    "id": 43,
-    "name": "Dung dịch vệ sinh Lactacyd",
-    "categoryid": 5
-  },
-  {
-    "id": 44,
-    "name": "Băng vệ sinh Diana siêu thấm",
-    "categoryid": 5
-  },
-  {
-    "id": 45,
-    "name": "Sữa tắm gội cho bé Johnson's",
-    "categoryid": 5
-  },
-  {
-    "id": 46,
-    "name": "Chỉ nha khoa Oral-B Essential",
-    "categoryid": 5
-  },
-  {
-    "id": 47,
-    "name": "Khăn ướt Caryn",
-    "categoryid": 5
-  },
-  {
-    "id": 48,
-    "name": "Dao cạo râu Gillette Mach 3",
-    "categoryid": 5
-  },
-  {
-    "id": 49,
-    "name": "Nước súc miệng Listerine",
-    "categoryid": 5
-  },
-  {
-    "id": 50,
-    "name": "Bông tẩy trang Silcot",
-    "categoryid": 5
-  },
-  {
-    "id": 51,
-    "name": "Viên uống Vitamin C Blackmores",
-    "categoryid": 6
-  },
-  {
-    "id": 52,
-    "name": "Dầu cá Omega-3 Healthy Care",
-    "categoryid": 6
-  },
-  {
-    "id": 53,
-    "name": "Collagen lựu đỏ Collagen Stick",
-    "categoryid": 6
-  },
-  {
-    "id": 54,
-    "name": "Viên uống trắng da DHC",
-    "categoryid": 6
-  },
-  {
-    "id": 55,
-    "name": "Sắt Nature Made",
-    "categoryid": 6
-  },
-  {
-    "id": 56,
-    "name": "Men vi sinh Optibac",
-    "categoryid": 6
-  },
-  {
-    "id": 57,
-    "name": "Tảo xoắn Spirulina Nhật Bản",
-    "categoryid": 6
-  },
-  {
-    "id": 58,
-    "name": "Tinh dầu tỏi Nature's Bounty",
-    "categoryid": 6
-  },
-  {
-    "id": 59,
-    "name": "Bổ mắt Puritan's Pride Lutein",
-    "categoryid": 6
-  },
-  {
-    "id": 60,
-    "name": "Canxi Osteocare",
-    "categoryid": 6
-  },
-  {
-    "id": 61,
-    "name": "Son dưỡng Dior Addict Lip Glow",
-    "categoryid": 7
-  },
-  {
-    "id": 62,
-    "name": "Mặt nạ ngủ môi Laneige",
-    "categoryid": 7
-  },
-  {
-    "id": 63,
-    "name": "Son lì MAC Retro Matte",
-    "categoryid": 7
-  },
-  {
-    "id": 64,
-    "name": "Son bóng Romand Juicy",
-    "categoryid": 7
-  },
-  {
-    "id": 65,
-    "name": "Son dưỡng mỡ hươu Astrid",
-    "categoryid": 7
-  },
-  {
-    "id": 66,
-    "name": "Tẩy tế bào chết môi Lush",
-    "categoryid": 7
-  },
-  {
-    "id": 67,
-    "name": "Son kem lì Black Rouge",
-    "categoryid": 7
-  },
-  {
-    "id": 68,
-    "name": "Son dưỡng Vaseline Rosy",
-    "categoryid": 7
-  },
-  {
-    "id": 69,
-    "name": "Kem dưỡng môi Bioderma",
-    "categoryid": 7
-  },
-  {
-    "id": 70,
-    "name": "Son dưỡng Nivea Essential",
-    "categoryid": 7
-  },
-  {
-    "id": 71,
-    "name": "Chanel No.5 EDP",
-    "categoryid": 8
-  },
-  {
-    "id": 72,
-    "name": "Miss Dior Blooming Bouquet",
-    "categoryid": 8
-  },
-  {
-    "id": 73,
-    "name": "Body Mist Bath & Body Works",
-    "categoryid": 8
-  },
-  {
-    "id": 74,
-    "name": "Nến thơm Yankee Candle",
-    "categoryid": 8
-  },
-  {
-    "id": 75,
-    "name": "Tinh dầu khuếch tán sả chanh",
-    "categoryid": 8
-  },
-  {
-    "id": 76,
-    "name": "Nước hoa khô cỏ mềm",
-    "categoryid": 8
-  },
-  {
-    "id": 77,
-    "name": "Gucci Bloom for Women",
-    "categoryid": 8
-  },
-  {
-    "id": 78,
-    "name": "Bleu de Chanel Parfum",
-    "categoryid": 8
-  },
-  {
-    "id": 79,
-    "name": "Nước hoa mini Narciso Rodriguez",
-    "categoryid": 8
-  },
-  {
-    "id": 80,
-    "name": "Xịt thơm quần áo Fabric Perfume",
-    "categoryid": 8
-  },
-  {
-    "id": 81,
-    "name": "Máy rửa mặt Foreo Luna 3",
-    "categoryid": 9
-  },
-  {
-    "id": 82,
-    "name": "Bộ cọ trang điểm Real Techniques",
-    "categoryid": 9
-  },
-  {
-    "id": 83,
-    "name": "Kẹp bấm mi Shu Uemura",
-    "categoryid": 9
-  },
-  {
-    "id": 84,
-    "name": "Mút trang điểm Beauty Blender",
-    "categoryid": 9
-  },
-  {
-    "id": 85,
-    "name": "Máy đẩy tinh chất Halio",
-    "categoryid": 9
-  },
-  {
-    "id": 86,
-    "name": "Máy xông mặt cầm tay Nano",
-    "categoryid": 9
-  },
-  {
-    "id": 87,
-    "name": "Túi đựng mỹ phẩm du lịch",
-    "categoryid": 9
-  },
-  {
-    "id": 88,
-    "name": "Gương trang điểm LED",
-    "categoryid": 9
-  },
-  {
-    "id": 89,
-    "name": "Lược gỡ rối Wet Brush",
-    "categoryid": 9
-  },
-  {
-    "id": 90,
-    "name": "Cây lăn massage mặt đá Cẩm Thạch",
-    "categoryid": 9
-  },
-  {
-    "id": 91,
-    "name": "Set dưỡng da Sulwhasoo",
-    "categoryid": 10
-  },
-  {
-    "id": 92,
-    "name": "Hộp quà tặng hoa hồng",
-    "categoryid": 10
-  },
-  {
-    "id": 93,
-    "name": "Bộ Travel Kit SK-II",
-    "categoryid": 10
-  },
-  {
-    "id": 94,
-    "name": "Set son 5 màu Shiseido",
-    "categoryid": 10
-  },
-  {
-    "id": 95,
-    "name": "Combo chăm sóc mụn cho nam",
-    "categoryid": 10
-  },
-  {
-    "id": 96,
-    "name": "Set mặt nạ giấy đa năng",
-    "categoryid": 10
-  },
-  {
-    "id": 97,
-    "name": "Bộ gội xả bưởi phục hồi",
-    "categoryid": 10
-  },
-  {
-    "id": 98,
-    "name": "Hộp quà Valentines Luxury",
-    "categoryid": 10
-  },
-  {
-    "id": 99,
-    "name": "Combo tẩy da chết & dưỡng thể",
-    "categoryid": 10
-  },
-  {
-    "id": 100,
-    "name": "Set nến thơm & trà hoa",
-    "categoryid": 10
-  }
+  { "id": 1, "name": "Sữa rửa mặt Cetaphil 500ml", "categoryid": 1, "price": 385000, "image": "img/lsp/sp.jpg" },
+  { "id": 2, "name": "Nước tẩy trang Bioderma Pink", "categoryid": 1, "price": 495000, "image": "img/lsp/sp.jpg" },
+  { "id": 3, "name": "Serum La Roche-Posay Effaclar", "categoryid": 1, "price": 920000, "image": "img/lsp/sp.jpg" },
+  { "id": 4, "name": "Kem dưỡng ẩm Neutrogena Aqua", "categoryid": 1, "price": 350000, "image": "img/lsp/sp.jpg" },
+  { "id": 5, "name": "Mặt nạ đất sét Kiehl's 125ml", "categoryid": 1, "price": 850000, "image": "img/lsp/sp.jpg" },
+  { "id": 6, "name": "Toner Klairs Supple Preparation", "categoryid": 1, "price": 320000, "image": "img/lsp/sp.jpg" },
+  { "id": 7, "name": "Kem chống nắng Anessa Perfect", "categoryid": 1, "price": 625000, "image": "img/lsp/sp.jpg" },
+  { "id": 8, "name": "Tinh chất Paula's Choice BHA 2%", "categoryid": 1, "price": 910000, "image": "img/lsp/sp.jpg" },
+  { "id": 9, "name": "Xịt khoáng Vichy 300ml", "categoryid": 1, "price": 390000, "image": "img/lsp/sp.jpg" },
+  { "id": 10, "name": "Kem mắt Estee Lauder", "categoryid": 1, "price": 1850000, "image": "img/lsp/sp.jpg" },
+  { "id": 11, "name": "Dầu gội Moroccanoil Moisture", "categoryid": 2, "price": 950000, "image": "img/lsp/sp.jpg" },
+  { "id": 12, "name": "Dầu xả TRESemmé Keratin Smooth", "categoryid": 2, "price": 180000, "image": "img/lsp/sp.jpg" },
+  { "id": 13, "name": "Tinh dầu dưỡng tóc L'Oreal", "categoryid": 2, "price": 250000, "image": "img/lsp/sp.jpg" },
+  { "id": 14, "name": "Xịt dưỡng tóc Double Rich", "categoryid": 2, "price": 850000, "image": "img/lsp/sp.jpg" },
+  { "id": 15, "name": "Mặt nạ ủ tóc Fino Shiseido", "categoryid": 2, "price": 220000, "image": "img/lsp/sp.jpg" },
+  { "id": 16, "name": "Dầu gội khô Batiste Original", "categoryid": 2, "price": 140000, "image": "img/lsp/sp.jpg" },
+  { "id": 17, "name": "Gel tạo kiểu tóc Tigi Bed Head", "categoryid": 2, "price": 450000, "image": "img/lsp/sp.jpg" },
+  { "id": 18, "name": "Serum mọc tóc Weilaiya", "categoryid": 2, "price": 880000, "image": "img/lsp/sp.jpg" },
+  { "id": 19, "name": "Kem xả Dove phục hồi hư tổn", "categoryid": 2, "price": 120000, "image": "img/lsp/sp.jpg" },
+  { "id": 20, "name": "Dầu gội trị gàu Selsun", "categoryid": 2, "price": 165000, "image": "img/lsp/sp.jpg" },
+  { "id": 21, "name": "Kem nền Maybelline Fit Me", "categoryid": 3, "price": 245000, "image": "img/lsp/sp.jpg" },
+  { "id": 22, "name": "Phấn phủ bột Innisfree", "categoryid": 3, "price": 150000, "image": "img/lsp/sp.jpg" },
+  { "id": 23, "name": "Mascara L'Oreal Lash Paradise", "categoryid": 3, "price": 210000, "image": "img/lsp/sp.jpg" },
+  { "id": 24, "name": "Bảng mắt 3CE Multi Eye Color", "categoryid": 3, "price": 750000, "image": "img/lsp/sp.jpg" },
+  { "id": 25, "name": "Kẻ mắt nước Kiss Me Heroine", "categoryid": 3, "price": 280000, "image": "img/lsp/sp.jpg" },
+  { "id": 26, "name": "Phấn má hồng Canmake Tokyo", "categoryid": 3, "price": 240000, "image": "img/lsp/sp.jpg" },
+  { "id": 27, "name": "Kem lót mờ lỗ chân lông Benefit", "categoryid": 3, "price": 950000, "image": "img/lsp/sp.jpg" },
+  { "id": 28, "name": "Che khuyết điểm The Saem", "categoryid": 3, "price": 120000, "image": "img/lsp/sp.jpg" },
+  { "id": 29, "name": "Xịt giữ lớp nền MAC Prep+Prime", "categoryid": 3, "price": 650000, "image": "img/lsp/sp.jpg" },
+  { "id": 30, "name": "Bút kẻ mày The Face Shop", "categoryid": 3, "price": 110000, "image": "img/lsp/sp.jpg" },
+  { "id": 31, "name": "Sữa tắm dưỡng ẩm Dove", "categoryid": 4, "price": 185000, "image": "img/lsp/sp.jpg" },
+  { "id": 32, "name": "Sữa dưỡng thể Vaseline 50X", "categoryid": 4, "price": 195000, "image": "img/lsp/sp.jpg" },
+  { "id": 33, "name": "Tẩy tế bào chết Cafe Cocoon", "categoryid": 4, "price": 115000, "image": "img/lsp/sp.jpg" },
+  { "id": 34, "name": "Kem dưỡng tay L'Occitane", "categoryid": 4, "price": 320000, "image": "img/lsp/sp.jpg" },
+  { "id": 35, "name": "Lăn khử mùi Vichy Laboratoires", "categoryid": 4, "price": 220000, "image": "img/lsp/sp.jpg" },
+  { "id": 36, "name": "Kem trị rạn da Bio-Oil", "categoryid": 4, "price": 450000, "image": "img/lsp/sp.jpg" },
+  { "id": 37, "name": "Bơ dưỡng thể The Body Shop", "categoryid": 4, "price": 550000, "image": "img/lsp/sp.jpg" },
+  { "id": 38, "name": "Muối tắm sữa bò A Bonne", "categoryid": 4, "price": 450000, "image": "img/lsp/sp.jpg" },
+  { "id": 39, "name": "Dầu dưỡng thể Neutrogena", "categoryid": 4, "price": 350000, "image": "img/lsp/sp.jpg" },
+  { "id": 40, "name": "Sữa tắm nước hoa Tesori d'Oriente", "categoryid": 4, "price": 250000, "image": "img/lsp/sp.jpg" },
+  { "id": 41, "name": "Bàn chải điện Oral-B Pro 600", "categoryid": 5, "price": 950000, "image": "img/lsp/sp.jpg" },
+  { "id": 42, "name": "Kem đánh răng Marvis Classic", "categoryid": 5, "price": 220000, "image": "img/lsp/sp.jpg" },
+  { "id": 43, "name": "Dung dịch vệ sinh Lactacyd", "categoryid": 5, "price": 85000, "image": "img/lsp/sp.jpg" },
+  { "id": 44, "name": "Băng vệ sinh Diana siêu thấm", "categoryid": 5, "price": 45000, "image": "img/lsp/sp.jpg" },
+  { "id": 45, "name": "Sữa tắm gội cho bé Johnson's", "categoryid": 5, "price": 160000, "image": "img/lsp/sp.jpg" },
+  { "id": 46, "name": "Chỉ nha khoa Oral-B Essential", "categoryid": 5, "price": 65000, "image": "img/lsp/sp.jpg" },
+  { "id": 47, "name": "Khăn ướt Caryn", "categoryid": 5, "price": 42000, "image": "img/lsp/sp.jpg" },
+  { "id": 48, "name": "Dao cạo râu Gillette Mach 3", "categoryid": 5, "price": 195000, "image": "img/lsp/sp.jpg" },
+  { "id": 49, "name": "Nước súc miệng Listerine", "categoryid": 5, "price": 135000, "image": "img/lsp/sp.jpg" },
+  { "id": 50, "name": "Bông tẩy trang Silcot", "categoryid": 5, "price": 55000, "image": "img/lsp/sp.jpg" },
+  { "id": 51, "name": "Viên uống Vitamin C Blackmores", "categoryid": 6, "price": 320000, "image": "img/lsp/sp.jpg" },
+  { "id": 52, "name": "Dầu cá Omega-3 Healthy Care", "categoryid": 6, "price": 450000, "image": "img/lsp/sp.jpg" },
+  { "id": 53, "name": "Collagen lựu đỏ Collagen Stick", "categoryid": 6, "price": 280000, "image": "img/lsp/sp.jpg" },
+  { "id": 54, "name": "Viên uống trắng da DHC", "categoryid": 6, "price": 190000, "image": "img/lsp/sp.jpg" },
+  { "id": 55, "name": "Sắt Nature Made", "categoryid": 6, "price": 350000, "image": "img/lsp/sp.jpg" },
+  { "id": 56, "name": "Men vi sinh Optibac", "categoryid": 6, "price": 480000, "image": "img/lsp/sp.jpg" },
+  { "id": 57, "name": "Tảo xoắn Spirulina Nhật Bản", "categoryid": 6, "price": 550000, "image": "img/lsp/sp.jpg" },
+  { "id": 58, "name": "Tinh dầu tỏi Nature's Bounty", "categoryid": 6, "price": 320000, "image": "img/lsp/sp.jpg" },
+  { "id": 59, "name": "Bổ mắt Puritan's Pride Lutein", "categoryid": 6, "price": 390000, "image": "img/lsp/sp.jpg" },
+  { "id": 60, "name": "Canxi Osteocare", "categoryid": 6, "price": 310000, "image": "img/lsp/sp.jpg" },
+  { "id": 61, "name": "Son dưỡng Dior Addict Lip Glow", "categoryid": 7, "price": 850000, "image": "img/lsp/sp.jpg" },
+  { "id": 62, "name": "Mặt nạ ngủ môi Laneige", "categoryid": 7, "price": 320000, "image": "img/lsp/sp.jpg" },
+  { "id": 63, "name": "Son lì MAC Retro Matte", "categoryid": 7, "price": 550000, "image": "img/lsp/sp.jpg" },
+  { "id": 64, "name": "Son bóng Romand Juicy", "categoryid": 7, "price": 185000, "image": "img/lsp/sp.jpg" },
+  { "id": 65, "name": "Son dưỡng mỡ hươu Astrid", "categoryid": 7, "price": 45000, "image": "img/lsp/sp.jpg" },
+  { "id": 66, "name": "Tẩy tế bào chết môi Lush", "categoryid": 7, "price": 350000, "image": "img/lsp/sp.jpg" },
+  { "id": 67, "name": "Son kem lì Black Rouge", "categoryid": 7, "price": 165000, "image": "img/lsp/sp.jpg" },
+  { "id": 68, "name": "Son dưỡng Vaseline Rosy", "categoryid": 7, "price": 65000, "image": "img/lsp/sp.jpg" },
+  { "id": 69, "name": "Kem dưỡng môi Bioderma", "categoryid": 7, "price": 120000, "image": "img/lsp/sp.jpg" },
+  { "id": 70, "name": "Son dưỡng Nivea Essential", "categoryid": 7, "price": 75000, "image": "img/lsp/sp.jpg" },
+  { "id": 71, "name": "Chanel No.5 EDP", "categoryid": 8, "price": 4200000, "image": "img/lsp/sp.jpg" },
+  { "id": 72, "name": "Miss Dior Blooming Bouquet", "categoryid": 8, "price": 3500000, "image": "img/lsp/sp.jpg" },
+  { "id": 73, "name": "Body Mist Bath & Body Works", "categoryid": 8, "price": 320000, "image": "img/lsp/sp.jpg" },
+  { "id": 74, "name": "Nến thơm Yankee Candle", "categoryid": 8, "price": 650000, "image": "img/lsp/sp.jpg" },
+  { "id": 75, "name": "Tinh dầu khuếch tán sả chanh", "categoryid": 8, "price": 150000, "image": "img/lsp/sp.jpg" },
+  { "id": 76, "name": "Nước hoa khô cỏ mềm", "categoryid": 8, "price": 180000, "image": "img/lsp/sp.jpg" },
+  { "id": 77, "name": "Gucci Bloom for Women", "categoryid": 8, "price": 3800000, "image": "img/lsp/sp.jpg" },
+  { "id": 78, "name": "Bleu de Chanel Parfum", "categoryid": 8, "price": 4500000, "image": "img/lsp/sp.jpg" },
+  { "id": 79, "name": "Nước hoa mini Narciso Rodriguez", "categoryid": 8, "price": 450000, "image": "img/lsp/sp.jpg" },
+  { "id": 80, "name": "Xịt thơm quần áo Fabric Perfume", "categoryid": 8, "price": 125000, "image": "img/lsp/sp.jpg" },
+  { "id": 81, "name": "Máy rửa mặt Foreo Luna 3", "categoryid": 9, "price": 3500000, "image": "img/lsp/sp.jpg" },
+  { "id": 82, "name": "Bộ cọ trang điểm Real Techniques", "categoryid": 9, "price": 450000, "image": "img/lsp/sp.jpg" },
+  { "id": 83, "name": "Kẹp bấm mi Shu Uemura", "categoryid": 9, "price": 420000, "image": "img/lsp/sp.jpg" },
+  { "id": 84, "name": "Mút trang điểm Beauty Blender", "categoryid": 9, "price": 480000, "image": "img/lsp/sp.jpg" },
+  { "id": 85, "name": "Máy đẩy tinh chất Halio", "categoryid": 9, "price": 1600000, "image": "img/lsp/sp.jpg" },
+  { "id": 86, "name": "Máy xông mặt cầm tay Nano", "categoryid": 9, "price": 150000, "image": "img/lsp/sp.jpg" },
+  { "id": 87, "name": "Túi đựng mỹ phẩm du lịch", "categoryid": 9, "price": 220000, "image": "img/lsp/sp.jpg" },
+  { "id": 88, "name": "Gương trang điểm LED", "categoryid": 9, "price": 350000, "image": "img/lsp/sp.jpg" },
+  { "id": 89, "name": "Lược gỡ rối Wet Brush", "categoryid": 9, "price": 280000, "image": "img/lsp/sp.jpg" },
+  { "id": 90, "name": "Cây lăn massage mặt đá Cẩm Thạch", "categoryid": 9, "price": 180000, "image": "img/lsp/sp.jpg" },
+  { "id": 91, "name": "Set dưỡng da Sulwhasoo", "categoryid": 10, "price": 2500000, "image": "img/lsp/sp.jpg" },
+  { "id": 92, "name": "Hộp quà tặng hoa hồng", "categoryid": 10, "price": 450000, "image": "img/lsp/sp.jpg" },
+  { "id": 93, "name": "Bộ Travel Kit SK-II", "categoryid": 10, "price": 1850000, "image": "img/lsp/sp.jpg" },
+  { "id": 94, "name": "Set son 5 màu Shiseido", "categoryid": 10, "price": 1200000, "image": "img/lsp/sp.jpg" },
+  { "id": 95, "name": "Combo chăm sóc mụn cho nam", "categoryid": 10, "price": 650000, "image": "img/lsp/sp.jpg" },
+  { "id": 96, "name": "Set mặt nạ giấy đa năng", "categoryid": 10, "price": 350000, "image": "img/lsp/sp.jpg" },
+  { "id": 97, "name": "Bộ gội xả bưởi phục hồi", "categoryid": 10, "price": 550000, "image": "img/lsp/sp.jpg" },
+  { "id": 98, "name": "Hộp quà Valentines Luxury", "categoryid": 10, "price": 2800000, "image": "img/lsp/sp.jpg" },
+  { "id": 99, "name": "Combo tẩy da chết & dưỡng thể", "categoryid": 10, "price": 420000, "image": "img/lsp/sp.jpg" },
+  { "id": 100, "name": "Set nến thơm & trà hoa", "categoryid": 10, "price": 580000, "image": "img/lsp/sp.jpg" }
 ]
