@@ -1,21 +1,30 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import ProductList from './components/Pages/ProductList';
-import './App.css';
+import { useState, useEffect } from 'react';
 
-function App() {
+function ProductList() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    // Gọi file JSON từ thư mục public
+    fetch('/product.json') 
+      .then((response) => response.json())
+      .then((data) => {
+        setProducts(data); // Lưu dữ liệu vào state
+      })
+      .catch((error) => console.error("Lỗi tải dữ liệu:", error));
+  }, []);
+
   return (
-    <Router>
-      <div className="app-wrapper">
-     
-        <Header />
-        <ProductList />
-        <Footer />
-      </div>
-    </Router>
+    <div>
+      <h2>Danh sách sản phẩm</h2>
+      <ul>
+        {products.map((item) => (
+          <li key={item.id}>
+            {item.name} - {item.price}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
-export default App;
+export default ProductList;
