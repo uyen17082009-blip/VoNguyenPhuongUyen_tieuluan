@@ -78,14 +78,6 @@ const DetailProduct = () => {
                     />
                 </div>
 
-                <div className="detail-card">
-                    <div className="detail-image">
-                        <img
-                            src={product.image || 'https://via.placeholder.com/500x350'}
-                            alt={product.name}
-                        />
-                    </div>
-
                     <div className="detail-info">
                         <h2>{product.name}</h2>
                         <p className="detail-price">
@@ -129,7 +121,6 @@ const DetailProduct = () => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 
