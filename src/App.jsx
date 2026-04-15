@@ -1,16 +1,21 @@
-import { useState } from "react";
-import { BrowserRouter } from "react-router-dom";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import ProductList from './components/Pages/ProductList';
+import './App.css';
 
-export default function App() {
-  const [page, setPage] = useState("login");
-
+function App() {
   return (
-    <BrowserRouter>
-
-      <Header />
-      <Footer />
-    </BrowserRouter>
+    <Router>
+      <div className="app-wrapper">
+     
+        <Header />
+        <ProductList />
+        <Footer />
+      </div>
+    </Router>
   );
 }
+
+export default App;
