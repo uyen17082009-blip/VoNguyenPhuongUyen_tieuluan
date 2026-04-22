@@ -40,8 +40,11 @@ const ProductList = () => {
         loadProducts();
     }, []);
     if (isLoading) {
-        return <div className="products-list-container">Lỗi: {error}</div>;
+        return <div className="products-list-container">Đang tải dữ liệu....</div>;
     }
+    if (error) {
+    return <div className="product-list-container" style={{color: 'red'}}>Lỗi: {error}</div>;
+}
     return (
         <div className="product-list-container">
             <div className="product-list">
