@@ -39,7 +39,9 @@ const ProductList = () => {
         };
         loadProducts();
     }, []);
-
+    if (isLoading) {
+        return <div className="products-list-container">Lỗi: {error}</div>;
+    }
     return (
         <div className="product-list-container">
             <div className="product-list">
