@@ -64,7 +64,7 @@ const DetailProduct = () => {
                 <p className="detail-price">
                     <span className="current-price">{product.currentPrice}</span>
                     {product.originalPrice && (
-                        <span className="original-price">{product.original}</span>
+                        <span className="original-price">{product.originalPrice}</span>
             )}
                     {product.discount && <span className = "discount">{product.discount}</span>} 
                 </p>
@@ -82,14 +82,14 @@ const DetailProduct = () => {
                         const cart = savedCart ? JSON.parse(savedCart) : [];
                         const existingItemIndex = cart.findIndex(item => item.id === product.id);
                         if (existingItemIndex >= 0 ) {
-                            card[existingItemIndex].quantity += 1;
+                            cart[existingItemIndex].quantity += 1;
                         } else {
                             cart.push({
                                 ...product,
                                 quantity: 1
                             });
                         }
-                    localStorage.setItem('cart', JSON.sringify(card));
+                    localStorage.setItem('cart', JSON.stringify(cart));
                     window.dispatchEvent(new Event('cartUpdated'));
                     navigate('/cart');
         }}>
