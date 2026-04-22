@@ -49,7 +49,7 @@ const DetailProduct = () => {
     return (
         <div className="detail-container">
             <button className="back-button" onClick={() => navigate(-1)}>
-                <- Quay lại
+             Quay lại
             </button>
 
             <div className="detail-card">
