@@ -3,600 +3,1400 @@
     "id": 1,
     "name": "Sữa rửa mặt Cetaphil 500ml",
     "categoryid": 1,
-    "price": 385000
+    "imageKey": "sp1",
+    "sizeS": "125ml",
+    "sizeM": "250ml",
+    "sizeL": "500ml",
+    "currentPrice": 385000,
+    "originalPrice": 450000,
+    "discount": "14%",
+    "rating": 4.8,
+    "sold": 1250
   },
   {
     "id": 2,
     "name": "Nước tẩy trang Bioderma Pink",
     "categoryid": 1,
-    "price": 495000
+    "imageKey": "sp2",
+    "sizeS": "100ml",
+    "sizeM": "250ml",
+    "sizeL": "500ml",
+    "currentPrice": 495000,
+    "originalPrice": 550000,
+    "discount": "10%",
+    "rating": 4.9,
+    "sold": 3400
   },
   {
     "id": 3,
     "name": "Serum La Roche-Posay Effaclar",
     "categoryid": 1,
-    "price": 920000
+    "imageKey": "sp3",
+    "sizeS": "10ml",
+    "sizeM": "30ml",
+    "sizeL": "50ml",
+    "currentPrice": 920000,
+    "originalPrice": 1050000,
+    "discount": "12%",
+    "rating": 4.7,
+    "sold": 890
   },
   {
     "id": 4,
     "name": "Kem dưỡng ẩm Neutrogena Aqua",
     "categoryid": 1,
-    "price": 350000
+    "imageKey": "sp4",
+    "sizeS": "15g",
+    "sizeM": "50g",
+    "sizeL": "80g",
+    "currentPrice": 350000,
+    "originalPrice": 420000,
+    "discount": "17%",
+    "rating": 4.6,
+    "sold": 2100
   },
   {
     "id": 5,
     "name": "Mặt nạ đất sét Kiehl's 125ml",
     "categoryid": 1,
-    "price": 850000
+    "imageKey": "sp5",
+    "sizeS": "14ml",
+    "sizeM": "28ml",
+    "sizeL": "125ml",
+    "currentPrice": 850000,
+    "originalPrice": 950000,
+    "discount": "11%",
+    "rating": 4.8,
+    "sold": 1500
   },
   {
     "id": 6,
     "name": "Toner Klairs Supple Preparation",
     "categoryid": 1,
-    "price": 320000
+    "imageKey": "sp6",
+    "sizeS": "30ml",
+    "sizeM": "180ml",
+    "sizeL": "250ml",
+    "currentPrice": 320000,
+    "originalPrice": 395000,
+    "discount": "19%",
+    "rating": 4.7,
+    "sold": 1800
   },
   {
     "id": 7,
     "name": "Kem chống nắng Anessa Perfect",
     "categoryid": 1,
-    "price": 625000
+    "imageKey": "sp7",
+    "sizeS": "20ml",
+    "sizeM": "60ml",
+    "sizeL": "90ml",
+    "currentPrice": 625000,
+    "originalPrice": 750000,
+    "discount": "17%",
+    "rating": 4.9,
+    "sold": 5600
   },
   {
     "id": 8,
     "name": "Tinh chất Paula's Choice BHA 2%",
     "categoryid": 1,
-    "price": 910000
+    "imageKey": "sp8",
+    "sizeS": "30ml",
+    "sizeM": "118ml",
+    "sizeL": "236ml",
+    "currentPrice": 910000,
+    "originalPrice": 1100000,
+    "discount": "17%",
+    "rating": 4.8,
+    "sold": 2900
   },
   {
     "id": 9,
     "name": "Xịt khoáng Vichy 300ml",
     "categoryid": 1,
-    "price": 390000
+    "imageKey": "sp9",
+    "sizeS": "50ml",
+    "sizeM": "150ml",
+    "sizeL": "300ml",
+    "currentPrice": 390000,
+    "originalPrice": 480000,
+    "discount": "19%",
+    "rating": 4.7,
+    "sold": 1400
   },
   {
     "id": 10,
     "name": "Kem mắt Estee Lauder",
     "categoryid": 1,
-    "price": 1850000
+    "imageKey": "sp10",
+    "sizeS": "5ml",
+    "sizeM": "15ml",
+    "sizeL": "30ml",
+    "currentPrice": 1850000,
+    "originalPrice": 2100000,
+    "discount": "12%",
+    "rating": 4.9,
+    "sold": 750
   },
   {
     "id": 11,
     "name": "Dầu gội Moroccanoil Moisture",
     "categoryid": 2,
-    "price": 950000
+    "imageKey": "sp11",
+    "sizeS": "70ml",
+    "sizeM": "250ml",
+    "sizeL": "500ml",
+    "currentPrice": 950000,
+    "originalPrice": 1150000,
+    "discount": "17%",
+    "rating": 4.8,
+    "sold": 620
   },
   {
     "id": 12,
     "name": "Dầu xả TRESemmé Keratin Smooth",
     "categoryid": 2,
-    "price": 180000
+    "imageKey": "sp12",
+    "sizeS": "170g",
+    "sizeM": "330g",
+    "sizeL": "620g",
+    "currentPrice": 180000,
+    "originalPrice": 220000,
+    "discount": "18%",
+    "rating": 4.5,
+    "sold": 3200
   },
   {
     "id": 13,
     "name": "Tinh dầu dưỡng tóc L'Oreal",
     "categoryid": 2,
-    "price": 250000
+    "imageKey": "sp13",
+    "sizeS": "30ml",
+    "sizeM": "100ml",
+    "sizeL": "150ml",
+    "currentPrice": 250000,
+    "originalPrice": 310000,
+    "discount": "19%",
+    "rating": 4.7,
+    "sold": 1950
   },
   {
     "id": 14,
     "name": "Xịt dưỡng tóc Double Rich",
     "categoryid": 2,
-    "price": 850000
+    "imageKey": "sp14",
+    "sizeS": "120ml",
+    "sizeM": "250ml",
+    "sizeL": "500ml",
+    "currentPrice": 85000,
+    "originalPrice": 110000,
+    "discount": "23%",
+    "rating": 4.4,
+    "sold": 4100
   },
   {
     "id": 15,
     "name": "Mặt nạ ủ tóc Fino Shiseido",
     "categoryid": 2,
-    "price": 220000
+    "imageKey": "sp15",
+    "sizeS": "50g",
+    "sizeM": "230g",
+    "sizeL": "400g",
+    "currentPrice": 220000,
+    "originalPrice": 280000,
+    "discount": "21%",
+    "rating": 4.9,
+    "sold": 7800
   },
   {
     "id": 16,
     "name": "Dầu gội khô Batiste Original",
     "categoryid": 2,
-    "price": 140000
+    "imageKey": "sp16",
+    "sizeS": "50ml",
+    "sizeM": "200ml",
+    "sizeL": "400ml",
+    "currentPrice": 140000,
+    "originalPrice": 190000,
+    "discount": "26%",
+    "rating": 4.6,
+    "sold": 2300
   },
   {
     "id": 17,
     "name": "Gel tạo kiểu tóc Tigi Bed Head",
     "categoryid": 2,
-    "price": 450000
+    "imageKey": "sp17",
+    "sizeS": "50ml",
+    "sizeM": "150ml",
+    "sizeL": "250ml",
+    "currentPrice": 450000,
+    "originalPrice": 550000,
+    "discount": "18%",
+    "rating": 4.7,
+    "sold": 540
   },
   {
     "id": 18,
     "name": "Serum mọc tóc Weilaiya",
     "categoryid": 2,
-    "price": 880000
+    "imageKey": "sp18",
+    "sizeS": "1 ống",
+    "sizeM": "8 ống",
+    "sizeL": "16 ống",
+    "currentPrice": 880000,
+    "originalPrice": 1200000,
+    "discount": "27%",
+    "rating": 4.8,
+    "sold": 1100
   },
   {
     "id": 19,
     "name": "Kem xả Dove phục hồi hư tổn",
     "categoryid": 2,
-    "price": 120000
+    "imageKey": "sp19",
+    "sizeS": "150ml",
+    "sizeM": "300ml",
+    "sizeL": "600ml",
+    "currentPrice": 120000,
+    "originalPrice": 150000,
+    "discount": "20%",
+    "rating": 4.5,
+    "sold": 3800
   },
   {
     "id": 20,
     "name": "Dầu gội trị gàu Selsun",
     "categoryid": 2,
-    "price": 165000
+    "imageKey": "sp20",
+    "sizeS": "50ml",
+    "sizeM": "100ml",
+    "sizeL": "250ml",
+    "currentPrice": 165000,
+    "originalPrice": 195000,
+    "discount": "15%",
+    "rating": 4.7,
+    "sold": 2600
   },
   {
     "id": 21,
     "name": "Kem nền Maybelline Fit Me",
     "categoryid": 3,
-    "price": 245000
+    "imageKey": "sp21",
+    "sizeS": "5ml",
+    "sizeM": "18ml",
+    "sizeL": "30ml",
+    "currentPrice": 245000,
+    "originalPrice": 290000,
+    "discount": "16%",
+    "rating": 4.6,
+    "sold": 9500
   },
   {
     "id": 22,
     "name": "Phấn phủ bột Innisfree",
     "categoryid": 3,
-    "price": 150000
+    "imageKey": "sp22",
+    "sizeS": "5g",
+    "sizeM": "10g",
+    "sizeL": "20g",
+    "currentPrice": 150000,
+    "originalPrice": 210000,
+    "discount": "29%",
+    "rating": 4.8,
+    "sold": 12000
   },
   {
     "id": 23,
     "name": "Mascara L'Oreal Lash Paradise",
     "categoryid": 3,
-    "price": 210000
+    "imageKey": "sp23",
+    "sizeS": "Mini",
+    "sizeM": "Standard",
+    "sizeL": "Duo Pack",
+    "currentPrice": 210000,
+    "originalPrice": 270000,
+    "discount": "22%",
+    "rating": 4.7,
+    "sold": 4300
   },
   {
     "id": 24,
     "name": "Bảng mắt 3CE Multi Eye Color",
     "categoryid": 3,
-    "price": 750000
+    "imageKey": "sp24",
+    "sizeS": "4 ô",
+    "sizeM": "9 ô",
+    "sizeL": "12 ô",
+    "currentPrice": 750000,
+    "originalPrice": 880000,
+    "discount": "15%",
+    "rating": 4.9,
+    "sold": 3100
   },
   {
     "id": 25,
     "name": "Kẻ mắt nước Kiss Me Heroine",
     "categoryid": 3,
-    "price": 280000
+    "imageKey": "sp25",
+    "sizeS": "0.1ml",
+    "sizeM": "0.4ml",
+    "sizeL": "Set 2",
+    "currentPrice": 280000,
+    "originalPrice": 350000,
+    "discount": "20%",
+    "rating": 4.9,
+    "sold": 5200
   },
   {
     "id": 26,
     "name": "Phấn má hồng Canmake Tokyo",
     "categoryid": 3,
-    "price": 240000
+    "imageKey": "sp26",
+    "sizeS": "2g",
+    "sizeM": "4g",
+    "sizeL": "6g",
+    "currentPrice": 240000,
+    "originalPrice": 320000,
+    "discount": "25%",
+    "rating": 4.7,
+    "sold": 1800
   },
   {
     "id": 27,
     "name": "Kem lót mờ lỗ chân lông Benefit",
     "categoryid": 3,
-    "price": 950000
+    "imageKey": "sp27",
+    "sizeS": "7.5ml",
+    "sizeM": "22ml",
+    "sizeL": "44ml",
+    "currentPrice": 950000,
+    "originalPrice": 1150000,
+    "discount": "17%",
+    "rating": 4.8,
+    "sold": 1200
   },
   {
     "id": 28,
     "name": "Che khuyết điểm The Saem",
     "categoryid": 3,
-    "price": 120000
+    "imageKey": "sp28",
+    "sizeS": "Mini",
+    "sizeM": "6.5g",
+    "sizeL": "Set 3",
+    "currentPrice": 120000,
+    "originalPrice": 160000,
+    "discount": "25%",
+    "rating": 4.6,
+    "sold": 15000
   },
   {
     "id": 29,
     "name": "Xịt giữ lớp nền MAC Prep+Prime",
     "categoryid": 3,
-    "price": 650000
+    "imageKey": "sp29",
+    "sizeS": "30ml",
+    "sizeM": "100ml",
+    "sizeL": "200ml",
+    "currentPrice": 650000,
+    "originalPrice": 780000,
+    "discount": "17%",
+    "rating": 4.9,
+    "sold": 2200
   },
   {
     "id": 30,
     "name": "Bút kẻ mày The Face Shop",
     "categoryid": 3,
-    "price": 110000
+    "imageKey": "sp30",
+    "sizeS": "0.1g",
+    "sizeM": "0.3g",
+    "sizeL": "Set 2",
+    "currentPrice": 110000,
+    "originalPrice": 150000,
+    "discount": "27%",
+    "rating": 4.5,
+    "sold": 8900
   },
   {
     "id": 31,
     "name": "Sữa tắm dưỡng ẩm Dove",
     "categoryid": 4,
-    "price": 185000
+    "imageKey": "sp31",
+    "sizeS": "200ml",
+    "sizeM": "500ml",
+    "sizeL": "900ml",
+    "currentPrice": 185000,
+    "originalPrice": 230000,
+    "discount": "20%",
+    "rating": 4.7,
+    "sold": 6700
   },
   {
     "id": 32,
     "name": "Sữa dưỡng thể Vaseline 50X",
     "categoryid": 4,
-    "price": 195000
+    "imageKey": "sp32",
+    "sizeS": "100ml",
+    "sizeM": "320ml",
+    "sizeL": "500ml",
+    "currentPrice": 195000,
+    "originalPrice": 260000,
+    "discount": "25%",
+    "rating": 4.8,
+    "sold": 9200
   },
   {
     "id": 33,
     "name": "Tẩy tế bào chết Cafe Cocoon",
     "categoryid": 4,
-    "price": 115000
+    "imageKey": "sp33",
+    "sizeS": "100ml",
+    "sizeM": "200ml",
+    "sizeL": "600ml",
+    "currentPrice": 115000,
+    "originalPrice": 165000,
+    "discount": "30%",
+    "rating": 4.9,
+    "sold": 13000
   },
   {
     "id": 34,
     "name": "Kem dưỡng tay L'Occitane",
     "categoryid": 4,
-    "price": 320000
+    "imageKey": "sp34",
+    "sizeS": "10ml",
+    "sizeM": "30ml",
+    "sizeL": "150ml",
+    "currentPrice": 320000,
+    "originalPrice": 390000,
+    "discount": "18%",
+    "rating": 4.9,
+    "sold": 1100
   },
   {
     "id": 35,
     "name": "Lăn khử mùi Vichy Laboratoires",
     "categoryid": 4,
-    "price": 220000
+    "imageKey": "sp35",
+    "sizeS": "Mini",
+    "sizeM": "50ml",
+    "sizeL": "Set 2",
+    "currentPrice": 220000,
+    "originalPrice": 320000,
+    "discount": "31%",
+    "rating": 4.8,
+    "sold": 4500
   },
   {
     "id": 36,
     "name": "Kem trị rạn da Bio-Oil",
     "categoryid": 4,
-    "price": 450000
+    "imageKey": "sp36",
+    "sizeS": "60ml",
+    "sizeM": "125ml",
+    "sizeL": "200ml",
+    "currentPrice": 450000,
+    "originalPrice": 580000,
+    "discount": "22%",
+    "rating": 4.7,
+    "sold": 2300
   },
   {
     "id": 37,
     "name": "Bơ dưỡng thể The Body Shop",
     "categoryid": 4,
-    "price": 550000
+    "imageKey": "sp37",
+    "sizeS": "50ml",
+    "sizeM": "200ml",
+    "sizeL": "400ml",
+    "currentPrice": 550000,
+    "originalPrice": 650000,
+    "discount": "15%",
+    "rating": 4.8,
+    "sold": 1600
   },
   {
     "id": 38,
     "name": "Muối tắm sữa bò A Bonne",
     "categoryid": 4,
-    "price": 450000
+    "imageKey": "sp38",
+    "sizeS": "150g",
+    "sizeM": "350g",
+    "sizeL": "700g",
+    "currentPrice": 45000,
+    "originalPrice": 65000,
+    "discount": "31%",
+    "rating": 4.6,
+    "sold": 25000
   },
   {
     "id": 39,
     "name": "Dầu dưỡng thể Neutrogena",
     "categoryid": 4,
-    "price": 350000
+    "imageKey": "sp39",
+    "sizeS": "100ml",
+    "sizeM": "250ml",
+    "sizeL": "473ml",
+    "currentPrice": 350000,
+    "originalPrice": 450000,
+    "discount": "22%",
+    "rating": 4.7,
+    "sold": 3400
   },
   {
     "id": 40,
     "name": "Sữa tắm nước hoa Tesori d'Oriente",
     "categoryid": 4,
-    "price": 250000
+    "imageKey": "sp40",
+    "sizeS": "250ml",
+    "sizeM": "500ml",
+    "sizeL": "750ml",
+    "currentPrice": 250000,
+    "originalPrice": 320000,
+    "discount": "22%",
+    "rating": 4.9,
+    "sold": 8900
   },
   {
     "id": 41,
     "name": "Bàn chải điện Oral-B Pro 600",
     "categoryid": 5,
-    "price": 950000
+    "imageKey": "sp41",
+    "sizeS": "Thân máy",
+    "sizeM": "Set + 2 đầu",
+    "sizeL": "Set + 4 đầu",
+    "currentPrice": 950000,
+    "originalPrice": 1250000,
+    "discount": "24%",
+    "rating": 4.8,
+    "sold": 1400
   },
   {
     "id": 42,
     "name": "Kem đánh răng Marvis Classic",
     "categoryid": 5,
-    "price": 220000
+    "imageKey": "sp42",
+    "sizeS": "10ml",
+    "sizeM": "25ml",
+    "sizeL": "85ml",
+    "currentPrice": 220000,
+    "originalPrice": 280000,
+    "discount": "21%",
+    "rating": 4.9,
+    "sold": 3200
   },
   {
     "id": 43,
     "name": "Dung dịch vệ sinh Lactacyd",
     "categoryid": 5,
-    "price": 85000
+    "imageKey": "sp43",
+    "sizeS": "60ml",
+    "sizeM": "150ml",
+    "sizeL": "250ml",
+    "currentPrice": 85000,
+    "originalPrice": 115000,
+    "discount": "26%",
+    "rating": 4.7,
+    "sold": 11000
   },
   {
     "id": 44,
     "name": "Băng vệ sinh Diana siêu thấm",
     "categoryid": 5,
-    "price": 45000
+    "imageKey": "sp44",
+    "sizeS": "8 miếng",
+    "sizeM": "20 miếng",
+    "sizeL": "40 miếng",
+    "currentPrice": 45000,
+    "originalPrice": 55000,
+    "discount": "18%",
+    "rating": 4.8,
+    "sold": 45000
   },
   {
     "id": 45,
     "name": "Sữa tắm gội cho bé Johnson's",
     "categoryid": 5,
-    "price": 160000
+    "imageKey": "sp45",
+    "sizeS": "100ml",
+    "sizeM": "200ml",
+    "sizeL": "500ml",
+    "currentPrice": 160000,
+    "originalPrice": 210000,
+    "discount": "24%",
+    "rating": 4.7,
+    "sold": 5600
   },
   {
     "id": 46,
     "name": "Chỉ nha khoa Oral-B Essential",
     "categoryid": 5,
-    "price": 65000
+    "imageKey": "sp46",
+    "sizeS": "10m",
+    "sizeM": "50m",
+    "sizeL": "100m",
+    "currentPrice": 65000,
+    "originalPrice": 85000,
+    "discount": "24%",
+    "rating": 4.9,
+    "sold": 15000
   },
   {
     "id": 47,
     "name": "Khăn ướt Caryn",
     "categoryid": 5,
-    "price": 42000
+    "imageKey": "sp47",
+    "sizeS": "20 tờ",
+    "sizeM": "50 tờ",
+    "sizeL": "100 tờ",
+    "currentPrice": 42000,
+    "originalPrice": 55000,
+    "discount": "24%",
+    "rating": 4.6,
+    "sold": 8900
   },
   {
     "id": 48,
     "name": "Dao cạo râu Gillette Mach 3",
     "categoryid": 5,
-    "price": 195000
+    "imageKey": "sp48",
+    "sizeS": "1 cán",
+    "sizeM": "Set + 2 đầu",
+    "sizeL": "Set + 4 đầu",
+    "currentPrice": 195000,
+    "originalPrice": 250000,
+    "discount": "22%",
+    "rating": 4.8,
+    "sold": 4300
   },
   {
     "id": 49,
     "name": "Nước súc miệng Listerine",
     "categoryid": 5,
-    "price": 135000
+    "imageKey": "sp49",
+    "sizeS": "80ml",
+    "sizeM": "250ml",
+    "sizeL": "750ml",
+    "currentPrice": 135000,
+    "originalPrice": 175000,
+    "discount": "23%",
+    "rating": 4.7,
+    "sold": 12000
   },
   {
     "id": 50,
     "name": "Bông tẩy trang Silcot",
     "categoryid": 5,
-    "price": 55000
+    "imageKey": "sp50",
+    "sizeS": "40 miếng",
+    "sizeM": "66 miếng",
+    "sizeL": "82 miếng",
+    "currentPrice": 55000,
+    "originalPrice": 75000,
+    "discount": "27%",
+    "rating": 4.9,
+    "sold": 35000
   },
   {
     "id": 51,
     "name": "Viên uống Vitamin C Blackmores",
     "categoryid": 6,
-    "price": 320000
+    "imageKey": "sp51",
+    "sizeS": "31 viên",
+    "sizeM": "62 viên",
+    "sizeL": "150 viên",
+    "currentPrice": 320000,
+    "originalPrice": 420000,
+    "discount": "24%",
+    "rating": 4.8,
+    "sold": 6700
   },
   {
     "id": 52,
     "name": "Dầu cá Omega-3 Healthy Care",
     "categoryid": 6,
-    "price": 450000
+    "imageKey": "sp52",
+    "sizeS": "100 viên",
+    "sizeM": "200 viên",
+    "sizeL": "400 viên",
+    "currentPrice": 450000,
+    "originalPrice": 650000,
+    "discount": "31%",
+    "rating": 4.7,
+    "sold": 8900
   },
   {
     "id": 53,
     "name": "Collagen lựu đỏ Collagen Stick",
     "categoryid": 6,
-    "price": 280000
+    "imageKey": "sp53",
+    "sizeS": "10 gói",
+    "sizeM": "30 gói",
+    "sizeL": "100 gói",
+    "currentPrice": 280000,
+    "originalPrice": 380000,
+    "discount": "26%",
+    "rating": 4.8,
+    "sold": 12500
   },
   {
     "id": 54,
     "name": "Viên uống trắng da DHC",
     "categoryid": 6,
-    "price": 190000
+    "imageKey": "sp54",
+    "sizeS": "20 ngày",
+    "sizeM": "30 ngày",
+    "sizeL": "60 ngày",
+    "currentPrice": 190000,
+    "originalPrice": 250000,
+    "discount": "24%",
+    "rating": 4.6,
+    "sold": 14000
   },
   {
     "id": 55,
     "name": "Sắt Nature Made",
     "categoryid": 6,
-    "price": 350000
+    "imageKey": "sp55",
+    "sizeS": "60 viên",
+    "sizeM": "180 viên",
+    "sizeL": "365 viên",
+    "currentPrice": 350000,
+    "originalPrice": 450000,
+    "discount": "22%",
+    "rating": 4.7,
+    "sold": 3400
   },
   {
     "id": 56,
     "name": "Men vi sinh Optibac",
     "categoryid": 6,
-    "price": 480000
+    "imageKey": "sp56",
+    "sizeS": "30 viên",
+    "sizeM": "60 viên",
+    "sizeL": "90 viên",
+    "currentPrice": 480000,
+    "originalPrice": 620000,
+    "discount": "23%",
+    "rating": 4.9,
+    "sold": 2100
   },
   {
     "id": 57,
     "name": "Tảo xoắn Spirulina Nhật Bản",
     "categoryid": 6,
-    "price": 550000
+    "imageKey": "sp57",
+    "sizeS": "200 viên",
+    "sizeM": "1500 viên",
+    "sizeL": "2200 viên",
+    "currentPrice": 550000,
+    "originalPrice": 750000,
+    "discount": "27%",
+    "rating": 4.8,
+    "sold": 5600
   },
   {
     "id": 58,
     "name": "Tinh dầu tỏi Nature's Bounty",
     "categoryid": 6,
-    "price": 320000
+    "imageKey": "sp58",
+    "sizeS": "30 viên",
+    "sizeM": "100 viên",
+    "sizeL": "200 viên",
+    "currentPrice": 320000,
+    "originalPrice": 420000,
+    "discount": "24%",
+    "rating": 4.6,
+    "sold": 1800
   },
   {
     "id": 59,
     "name": "Bổ mắt Puritan's Pride Lutein",
     "categoryid": 6,
-    "price": 390000
+    "imageKey": "sp59",
+    "sizeS": "30 viên",
+    "sizeM": "60 viên",
+    "sizeL": "120 viên",
+    "currentPrice": 390000,
+    "originalPrice": 520000,
+    "discount": "25%",
+    "rating": 4.7,
+    "sold": 2900
   },
   {
     "id": 60,
     "name": "Canxi Osteocare",
     "categoryid": 6,
-    "price": 310000
+    "imageKey": "sp60",
+    "sizeS": "30 viên",
+    "sizeM": "90 viên",
+    "sizeL": "Set 2 hộp",
+    "currentPrice": 310000,
+    "originalPrice": 410000,
+    "discount": "24%",
+    "rating": 4.8,
+    "sold": 4100
   },
   {
     "id": 61,
     "name": "Son dưỡng Dior Addict Lip Glow",
     "categoryid": 7,
-    "price": 850000
+    "imageKey": "sp61",
+    "sizeS": "Mini",
+    "sizeM": "Standard",
+    "sizeL": "Set 2",
+    "currentPrice": 850000,
+    "originalPrice": 980000,
+    "discount": "13%",
+    "rating": 4.9,
+    "sold": 5200
   },
   {
     "id": 62,
     "name": "Mặt nạ ngủ môi Laneige",
     "categoryid": 7,
-    "price": 320000
+    "imageKey": "sp62",
+    "sizeS": "3g",
+    "sizeM": "8g",
+    "sizeL": "20g",
+    "currentPrice": 320000,
+    "originalPrice": 450000,
+    "discount": "29%",
+    "rating": 4.8,
+    "sold": 18000
   },
   {
     "id": 63,
     "name": "Son lì MAC Retro Matte",
     "categoryid": 7,
-    "price": 550000
+    "imageKey": "sp63",
+    "sizeS": "Mini",
+    "sizeM": "3g",
+    "sizeL": "Set",
+    "currentPrice": 550000,
+    "originalPrice": 680000,
+    "discount": "19%",
+    "rating": 4.7,
+    "sold": 6400
   },
   {
     "id": 64,
     "name": "Son bóng Romand Juicy",
     "categoryid": 7,
-    "price": 185000
+    "imageKey": "sp64",
+    "sizeS": "2g",
+    "sizeM": "5.5g",
+    "sizeL": "Set 3",
+    "currentPrice": 185000,
+    "originalPrice": 250000,
+    "discount": "26%",
+    "rating": 4.8,
+    "sold": 21000
   },
   {
     "id": 65,
     "name": "Son dưỡng mỡ hươu Astrid",
     "categoryid": 7,
-    "price": 45000
+    "imageKey": "sp65",
+    "sizeS": "Mini",
+    "sizeM": "4g",
+    "sizeL": "Set 3",
+    "currentPrice": 45000,
+    "originalPrice": 65000,
+    "discount": "31%",
+    "rating": 4.6,
+    "sold": 45000
   },
   {
     "id": 66,
     "name": "Tẩy tế bào chết môi Lush",
     "categoryid": 7,
-    "price": 350000
+    "imageKey": "sp66",
+    "sizeS": "10g",
+    "sizeM": "25g",
+    "sizeL": "50g",
+    "currentPrice": 350000,
+    "originalPrice": 480000,
+    "discount": "27%",
+    "rating": 4.9,
+    "sold": 1200
   },
   {
     "id": 67,
     "name": "Son kem lì Black Rouge",
     "categoryid": 7,
-    "price": 165000
+    "imageKey": "sp67",
+    "sizeS": "Mini",
+    "sizeM": "4.5g",
+    "sizeL": "Set 4",
+    "currentPrice": 165000,
+    "originalPrice": 240000,
+    "discount": "31%",
+    "rating": 4.7,
+    "sold": 32000
   },
   {
     "id": 68,
     "name": "Son dưỡng Vaseline Rosy",
     "categoryid": 7,
-    "price": 65000
+    "imageKey": "sp68",
+    "sizeS": "7g",
+    "sizeM": "10g",
+    "sizeL": "20g",
+    "currentPrice": 65000,
+    "originalPrice": 95000,
+    "discount": "32%",
+    "rating": 4.8,
+    "sold": 28000
   },
   {
     "id": 69,
     "name": "Kem dưỡng môi Bioderma",
     "categoryid": 7,
-    "price": 120000
+    "imageKey": "sp69",
+    "sizeS": "2g",
+    "sizeM": "4g",
+    "sizeL": "Set 2",
+    "currentPrice": 120000,
+    "originalPrice": 180000,
+    "discount": "33%",
+    "rating": 4.7,
+    "sold": 15000
   },
   {
     "id": 70,
     "name": "Son dưỡng Nivea Essential",
     "categoryid": 7,
-    "price": 75000
+    "imageKey": "sp70",
+    "sizeS": "2.5g",
+    "sizeM": "4.8g",
+    "sizeL": "Set 2",
+    "currentPrice": 75000,
+    "originalPrice": 105000,
+    "discount": "29%",
+    "rating": 4.5,
+    "sold": 19000
   },
   {
     "id": 71,
     "name": "Chanel No.5 EDP",
     "categoryid": 8,
-    "price": 4200000
+    "imageKey": "sp71",
+    "sizeS": "35ml",
+    "sizeM": "50ml",
+    "sizeL": "100ml",
+    "currentPrice": 4200000,
+    "originalPrice": 4800000,
+    "discount": "13%",
+    "rating": 4.9,
+    "sold": 340
   },
   {
     "id": 72,
     "name": "Miss Dior Blooming Bouquet",
     "categoryid": 8,
-    "price": 3500000
+    "imageKey": "sp72",
+    "sizeS": "30ml",
+    "sizeM": "50ml",
+    "sizeL": "100ml",
+    "currentPrice": 3500000,
+    "originalPrice": 4100000,
+    "discount": "15%",
+    "rating": 4.9,
+    "sold": 560
   },
   {
     "id": 73,
     "name": "Body Mist Bath & Body Works",
     "categoryid": 8,
-    "price": 320000
+    "imageKey": "sp73",
+    "sizeS": "75ml",
+    "sizeM": "236ml",
+    "sizeL": "Set 3",
+    "currentPrice": 320000,
+    "originalPrice": 450000,
+    "discount": "29%",
+    "rating": 4.8,
+    "sold": 12000
   },
   {
     "id": 74,
     "name": "Nến thơm Yankee Candle",
     "categoryid": 8,
-    "price": 650000
+    "imageKey": "sp74",
+    "sizeS": "104g",
+    "sizeM": "411g",
+    "sizeL": "623g",
+    "currentPrice": 650000,
+    "originalPrice": 850000,
+    "discount": "24%",
+    "rating": 4.8,
+    "sold": 920
   },
   {
     "id": 75,
     "name": "Tinh dầu khuếch tán sả chanh",
     "categoryid": 8,
-    "price": 150000
+    "imageKey": "sp75",
+    "sizeS": "10ml",
+    "sizeM": "50ml",
+    "sizeL": "100ml",
+    "currentPrice": 150000,
+    "originalPrice": 220000,
+    "discount": "32%",
+    "rating": 4.7,
+    "sold": 4300
   },
   {
     "id": 76,
     "name": "Nước hoa khô cỏ mềm",
     "categoryid": 8,
-    "price": 180000
+    "imageKey": "sp76",
+    "sizeS": "5g",
+    "sizeM": "10g",
+    "sizeL": "Set 2",
+    "currentPrice": 180000,
+    "originalPrice": 250000,
+    "discount": "28%",
+    "rating": 4.6,
+    "sold": 2100
   },
   {
     "id": 77,
     "name": "Gucci Bloom for Women",
     "categoryid": 8,
-    "price": 3800000
+    "imageKey": "sp77",
+    "sizeS": "30ml",
+    "sizeM": "50ml",
+    "sizeL": "100ml",
+    "currentPrice": 3800000,
+    "originalPrice": 4500000,
+    "discount": "16%",
+    "rating": 4.9,
+    "sold": 410
   },
   {
     "id": 78,
     "name": "Bleu de Chanel Parfum",
     "categoryid": 8,
-    "price": 4500000
+    "imageKey": "sp78",
+    "sizeS": "50ml",
+    "sizeM": "100ml",
+    "sizeL": "150ml",
+    "currentPrice": 4500000,
+    "originalPrice": 5200000,
+    "discount": "13%",
+    "rating": 4.9,
+    "sold": 680
   },
   {
     "id": 79,
     "name": "Nước hoa mini Narciso Rodriguez",
     "categoryid": 8,
-    "price": 450000
+    "imageKey": "sp79",
+    "sizeS": "7.5ml",
+    "sizeM": "10ml",
+    "sizeL": "20ml",
+    "currentPrice": 450000,
+    "originalPrice": 600000,
+    "discount": "25%",
+    "rating": 4.8,
+    "sold": 2900
   },
   {
     "id": 80,
     "name": "Xịt thơm quần áo Fabric Perfume",
     "categoryid": 8,
-    "price": 125000
+    "imageKey": "sp80",
+    "sizeS": "60ml",
+    "sizeM": "250ml",
+    "sizeL": "500ml",
+    "currentPrice": 125000,
+    "originalPrice": 185000,
+    "discount": "32%",
+    "rating": 4.7,
+    "sold": 8400
   },
   {
     "id": 81,
     "name": "Máy rửa mặt Foreo Luna 3",
     "categoryid": 9,
-    "price": 3500000
+    "imageKey": "sp81",
+    "sizeS": "Luna Play",
+    "sizeM": "Luna Mini",
+    "sizeL": "Luna 3",
+    "currentPrice": 3500000,
+    "originalPrice": 4200000,
+    "discount": "17%",
+    "rating": 4.9,
+    "sold": 890
   },
   {
     "id": 82,
     "name": "Bộ cọ trang điểm Real Techniques",
     "categoryid": 9,
-    "price": 450000
+    "imageKey": "sp82",
+    "sizeS": "1 cây lẻ",
+    "sizeM": "Set 4 cây",
+    "sizeL": "Set 10 cây",
+    "currentPrice": 450000,
+    "originalPrice": 650000,
+    "discount": "31%",
+    "rating": 4.8,
+    "sold": 3200
   },
   {
     "id": 83,
     "name": "Kẹp bấm mi Shu Uemura",
     "categoryid": 9,
-    "price": 420000
+    "imageKey": "sp83",
+    "sizeS": "Mini",
+    "sizeM": "Standard",
+    "sizeL": "Pro Version",
+    "currentPrice": 420000,
+    "originalPrice": 550000,
+    "discount": "24%",
+    "rating": 4.9,
+    "sold": 1500
   },
   {
     "id": 84,
     "name": "Mút trang điểm Beauty Blender",
     "categoryid": 9,
-    "price": 480000
+    "imageKey": "sp84",
+    "sizeS": "1 miếng",
+    "sizeM": "Set 2 miếng",
+    "sizeL": "Set 4 miếng",
+    "currentPrice": 480000,
+    "originalPrice": 600000,
+    "discount": "20%",
+    "rating": 4.9,
+    "sold": 2600
   },
   {
     "id": 85,
     "name": "Máy đẩy tinh chất Halio",
     "categoryid": 9,
-    "price": 1600000
+    "imageKey": "sp85",
+    "sizeS": "Cầm tay",
+    "sizeM": "Standard",
+    "sizeL": "Pro Premium",
+    "currentPrice": 1600000,
+    "originalPrice": 2100000,
+    "discount": "24%",
+    "rating": 4.8,
+    "sold": 1100
   },
   {
     "id": 86,
     "name": "Máy xông mặt cầm tay Nano",
     "categoryid": 9,
-    "price": 150000
+    "imageKey": "sp86",
+    "sizeS": "15ml",
+    "sizeM": "30ml",
+    "sizeL": "50ml",
+    "currentPrice": 150000,
+    "originalPrice": 250000,
+    "discount": "40%",
+    "rating": 4.5,
+    "sold": 5600
   },
   {
     "id": 87,
     "name": "Túi đựng mỹ phẩm du lịch",
     "categoryid": 9,
-    "price": 220000
+    "imageKey": "sp87",
+    "sizeS": "S",
+    "sizeM": "M",
+    "sizeL": "L",
+    "currentPrice": 220000,
+    "originalPrice": 320000,
+    "discount": "31%",
+    "rating": 4.7,
+    "sold": 3400
   },
   {
     "id": 88,
     "name": "Gương trang điểm LED",
     "categoryid": 9,
-    "price": 350000
+    "imageKey": "sp88",
+    "sizeS": "Tròn",
+    "sizeM": "Gập",
+    "sizeL": "Để bàn lớn",
+    "currentPrice": 350000,
+    "originalPrice": 480000,
+    "discount": "27%",
+    "rating": 4.8,
+    "sold": 2100
   },
   {
     "id": 89,
     "name": "Lược gỡ rối Wet Brush",
     "categoryid": 9,
-    "price": 280000
+    "imageKey": "sp89",
+    "sizeS": "Mini",
+    "sizeM": "Standard",
+    "sizeL": "Paddle",
+    "currentPrice": 280000,
+    "originalPrice": 390000,
+    "discount": "28%",
+    "rating": 4.9,
+    "sold": 4300
   },
   {
     "id": 90,
     "name": "Cây lăn massage mặt đá Cẩm Thạch",
     "categoryid": 9,
-    "price": 180000
+    "imageKey": "sp90",
+    "sizeS": "1 đầu",
+    "sizeM": "2 đầu",
+    "sizeL": "Set kèm Gua-sha",
+    "currentPrice": 180000,
+    "originalPrice": 280000,
+    "discount": "36%",
+    "rating": 4.6,
+    "sold": 1800
   },
   {
     "id": 91,
     "name": "Set dưỡng da Sulwhasoo",
     "categoryid": 10,
-    "price": 2500000
+    "imageKey": "sp91",
+    "sizeS": "Mini Kit",
+    "sizeM": "Essential Set",
+    "sizeL": "Perfect Set",
+    "currentPrice": 2500000,
+    "originalPrice": 3200000,
+    "discount": "22%",
+    "rating": 4.9,
+    "sold": 210
   },
   {
     "id": 92,
     "name": "Hộp quà tặng hoa hồng",
     "categoryid": 10,
-    "price": 450000
+    "imageKey": "sp92",
+    "sizeS": "3 bông",
+    "sizeM": "9 bông",
+    "sizeL": "18 bông",
+    "currentPrice": 450000,
+    "originalPrice": 600000,
+    "discount": "25%",
+    "rating": 4.7,
+    "sold": 1500
   },
   {
     "id": 93,
     "name": "Bộ Travel Kit SK-II",
     "categoryid": 10,
-    "price": 1850000
+    "imageKey": "sp93",
+    "sizeS": "2 món",
+    "sizeM": "4 món",
+    "sizeL": "6 món",
+    "currentPrice": 1850000,
+    "originalPrice": 2400000,
+    "discount": "23%",
+    "rating": 4.9,
+    "sold": 640
   },
   {
     "id": 94,
     "name": "Set son 5 màu Shiseido",
     "categoryid": 10,
-    "price": 1200000
+    "imageKey": "sp94",
+    "sizeS": "Set Mini",
+    "sizeM": "Set Full",
+    "sizeL": "Limited Edition",
+    "currentPrice": 1200000,
+    "originalPrice": 1600000,
+    "discount": "25%",
+    "rating": 4.8,
+    "sold": 320
   },
   {
     "id": 95,
     "name": "Combo chăm sóc mụn cho nam",
     "categoryid": 10,
-    "price": 650000
+    "imageKey": "sp95",
+    "sizeS": "Cơ bản",
+    "sizeM": "Nâng cao",
+    "sizeL": "Chuyên sâu",
+    "currentPrice": 650000,
+    "originalPrice": 850000,
+    "discount": "24%",
+    "rating": 4.6,
+    "sold": 1100
   },
   {
     "id": 96,
     "name": "Set mặt nạ giấy đa năng",
     "categoryid": 10,
-    "price": 350000
+    "imageKey": "sp96",
+    "sizeS": "5 miếng",
+    "sizeM": "10 miếng",
+    "sizeL": "30 miếng",
+    "currentPrice": 350000,
+    "originalPrice": 500000,
+    "discount": "30%",
+    "rating": 4.7,
+    "sold": 5600
   },
   {
     "id": 97,
     "name": "Bộ gội xả bưởi phục hồi",
     "categoryid": 10,
-    "price": 550000
+    "imageKey": "sp97",
+    "sizeS": "250ml",
+    "sizeM": "500ml",
+    "sizeL": "850ml",
+    "currentPrice": 550000,
+    "originalPrice": 720000,
+    "discount": "24%",
+    "rating": 4.8,
+    "sold": 2900
   },
   {
     "id": 98,
     "name": "Hộp quà Valentines Luxury",
     "categoryid": 10,
-    "price": 2800000
+    "imageKey": "sp98",
+    "sizeS": "Standard",
+    "sizeM": "Premium",
+    "sizeL": "Diamond",
+    "currentPrice": 2800000,
+    "originalPrice": 3500000,
+    "discount": "20%",
+    "rating": 5.0,
+    "sold": 150
   },
   {
     "id": 99,
     "name": "Combo tẩy da chết & dưỡng thể",
     "categoryid": 10,
-    "price": 420000
+    "imageKey": "sp99",
+    "sizeS": "Mini",
+    "sizeM": "Full Size",
+    "sizeL": "Duo Pack",
+    "currentPrice": 420000,
+    "originalPrice": 580000,
+    "discount": "28%",
+    "rating": 4.8,
+    "sold": 3400
   },
   {
     "id": 100,
     "name": "Set nến thơm & trà hoa",
     "categoryid": 10,
-    "price": 580000
+    "imageKey": "sp100",
+    "sizeS": "Box nhỏ",
+    "sizeM": "Box vừa",
+    "sizeL": "Box quà lớn",
+    "currentPrice": 580000,
+    "originalPrice": 750000,
+    "discount": "23%",
+    "rating": 4.9,
+    "sold": 1200
   }
 ]
