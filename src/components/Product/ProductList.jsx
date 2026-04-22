@@ -1,7 +1,7 @@
 import React ,{useEffect, useState } from 'react';
 import './ProductList.css'
 import ProductCard from './ProductCard';
-import { imageMap } from '../../utils/productImage;
+import { imageMap } from '../../utils/productImages';
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
