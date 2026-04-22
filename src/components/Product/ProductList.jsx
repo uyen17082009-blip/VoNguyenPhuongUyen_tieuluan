@@ -1,7 +1,7 @@
 import React ,{useEffect, useState } from 'react';
 import './ProductList.css'
 import ProductCard from './ProductCard';
-
+import { imageMap } from '../../utils/productImage;
 import sp1Image from '../../img/sp1.png';
 import sp2Image from '../../img/sp2.jpg';
 import sp3Image from '../../img/sp3.jpg';
