@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
-import { imageMap } from '../../utils/productImages';
+import { imageMap } from '../../utils/productImage';
 import './ProductList.css';
 
 const PRODUCTS_PER_PAGE = 8; // Hiển thị 8 sản phẩm (2 hàng x 4 cột)
