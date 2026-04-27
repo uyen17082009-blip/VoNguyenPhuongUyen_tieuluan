@@ -7,12 +7,16 @@ const DetailProduct = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
+
+  // Khởi tạo state từ location hoặc null
   const [product, setProduct] = useState(location.state?.product || null);
   const [isLoading, setIsLoading] = useState(!location.state?.product);
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // Nếu đã có product từ location.state thì không cần fetch nữa
     if (product) return;
+
     const fetchProduct = async () => {
       try {
         const response = await fetch('/products.json');
@@ -21,9 +25,11 @@ const DetailProduct = () => {
         }
         const data = await response.json();
         const found = data.find((item) => String(item.id) === String(id));
+        
         if (!found) {
           throw new Error('Sản phẩm không tồn tại');
         }
+
         setProduct({
           ...found,
           image: imageMap[found.imageKey] || found.image
@@ -34,6 +40,7 @@ const DetailProduct = () => {
         setIsLoading(false);
       }
     };
+
     fetchProduct();
   }, [id, product]);
 
@@ -70,15 +77,18 @@ const DetailProduct = () => {
             )}
             {product.discount && <span className="discount">{product.discount}</span>}
           </p>
+          
           <div className="detail-sizes">
             <button className="ram-ssd-tag">{product.sizeS}</button>
             <button className="ram-ssd-tag">{product.sizeM}</button>
             <button className="ram-ssd-tag">{product.sizeL}</button>
           </div>
+
           <div className="detail-meta">
-            {product.rating && <span>{product.rating}</span>}
+            {product.rating && <span>⭐ {product.rating}</span>}
             {product.sold && <span>Đã bán {product.sold}</span>}
           </div>
+
           <button className="buy-now-button" onClick={() => {
             const savedCart = localStorage.getItem('cart');
             const cart = savedCart ? JSON.parse(savedCart) : [];
@@ -94,6 +104,7 @@ const DetailProduct = () => {
             }
             
             localStorage.setItem('cart', JSON.stringify(cart));
+            // Tạo event để cập nhật badge giỏ hàng nếu cần
             window.dispatchEvent(new Event('cartUpdated'));
             navigate('/cart');
           }}>
