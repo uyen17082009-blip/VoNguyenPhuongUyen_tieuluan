@@ -1,5 +1,5 @@
 
-const imageModules = import.meta.glob('../img/*.{png,jpg,jpeg,webp,gì,svg}',{
+const imageModules = import.meta.glob('../img/*.{png,jpg,jpeg,webp,gif,svg}',{
     eager:true
 });
 
