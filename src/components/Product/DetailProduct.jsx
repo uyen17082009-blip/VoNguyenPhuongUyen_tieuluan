@@ -24,7 +24,12 @@ const DetailProduct = () => {
           throw new Error('Không thể tải thông tin sản phẩm');
         }
         const data = await response.json();
-        const found = data.find((item) => String(item.id) === String(id));
+     const found = data.find((item) => String(item.id) === String(id));
+
+// Thay bằng cách kiểm tra kỹ hơn này:
+const found = data.find((item) => {
+    return item.id.toString() === id.toString();
+});
         
         if (!found) {
           throw new Error('Sản phẩm không tồn tại');
