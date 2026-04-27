@@ -3,40 +3,26 @@ import ProductCard from './ProductCard';
 import { imageMap } from '../../utils/productImages';
 import './ProductList.css';
 
-const PRODUCTS_PER_PAGE = 6;
+const PRODUCTS_PER_PAGE = 8; // Hiển thị 8 sản phẩm (2 hàng x 4 cột)
 const jsonBase = import.meta.env.BASE_URL || '/';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
-  const [categories, setCategories] = useState([]);
-  const [selectedCategoryId, setSelectedCategoryId] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        const [productsRes, categoriesRes] = await Promise.all([
-          fetch(`${jsonBase}products.json`),
-          fetch(`${jsonBase}category.json`)
-        ]);
-
-        if (!productsRes.ok) {
-          throw new Error('Không thể tải dữ liệu sản phẩm');
-        }
-
+        const productsRes = await fetch(`${jsonBase}products.json`);
+        if (!productsRes.ok) throw new Error('Không thể tải dữ liệu');
+        
         const data = await productsRes.json();
         const mappedProducts = data.map((item) => ({
           ...item,
           image: imageMap[item.imageKey] || item.image
         }));
         setProducts(mappedProducts);
-
-        if (categoriesRes.ok) {
-          const catData = await categoriesRes.json();
-          setCategories(Array.isArray(catData) ? catData : []);
-        }
       } catch (err) {
         setError(err.message);
       } finally {
@@ -46,104 +32,47 @@ const ProductList = () => {
     loadData();
   }, []);
 
-  const filteredProducts = selectedCategoryId == null
-    ? products
-    : products.filter((p) => p.categoryid === selectedCategoryId);
+  // Lấy ra đúng 8 sản phẩm đầu tiên hoặc theo logic của bạn
+  const visibleProducts = products.slice(0, PRODUCTS_PER_PAGE);
 
-  const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PRODUCTS_PER_PAGE));
-
-  useEffect(() => {
-    setCurrentPage((p) => Math.min(p, totalPages));
-  }, [totalPages]);
-
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [selectedCategoryId]);
-
-  const safePage = Math.min(currentPage, totalPages);
-  const start = (safePage - 1) * PRODUCTS_PER_PAGE;
-  const visibleProducts = filteredProducts.slice(start, start + PRODUCTS_PER_PAGE);
-
-  const goPrev = () => setCurrentPage((p) => Math.max(1, p - 1));
-  const goNext = () => setCurrentPage((p) => Math.min(totalPages, p + 1));
-
-  if (isLoading) {
-    return <div className="product-list-container">Đang tải sản phẩm...</div>;
-  }
-
-  if (error) {
-    return <div className="product-list-container">Lỗi: {error}</div>;
-  }
+  if (isLoading) return <div className="loading">Đang tải sản phẩm...</div>;
+  if (error) return <div className="error">Lỗi: {error}</div>;
 
   return (
-    <div className="product-list-container">
-      <div className="product-list-layout">
-        {categories.length > 0 && (
-          <aside className="product-list-sidebar" aria-label="Lọc theo danh mục">
-            <h2 className="product-list-sidebar_title">Danh mục</h2>
-            <ul className="product-list-sidebar_list">
-              <li>
-                <button
-                  type="button"
-                  className={`product-list-sidebar_btn ${selectedCategoryId == null ? 'product-list-sidebar_btn--active' : ''}`}
-                  onClick={() => setSelectedCategoryId(null)}
-                >
-                  Tất cả
-                </button>
-              </li>
-              {categories.map((cat) => (
-                <li key={cat.id}>
-                  <button
-                    type="button"
-                    className={`product-list-sidebar_btn ${selectedCategoryId === cat.id ? 'product-list-sidebar_btn--active' : ''}`}
-                    onClick={() => setSelectedCategoryId(cat.id)}
-                  >
-                    {cat.name}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </aside>
-        )}
-
-        <div className="product-list-main">
-          {filteredProducts.length === 0 ? (
-            <p className="product-list-empty">Không có sản phẩm trong danh mục này.</p>
-          ) : (
-            <>
-              <div className="product-list">
-                {visibleProducts.map((product) => (
-                  <ProductCard key={product.id} product={product} />
-                ))}
-              </div>
-
-              {filteredProducts.length > PRODUCTS_PER_PAGE && (
-                <div className="product-list-pagination" role="navigation" aria-label="Phân trang sản phẩm">
-                  <button
-                    type="button"
-                    className="product-list-pagination_btn"
-                    onClick={goPrev}
-                    disabled={safePage <= 1}
-                  >
-                    Trang trước
-                  </button>
-                  <span className="product-list-pagination_info">
-                    Trang {safePage} / {totalPages}
-                  </span>
-                  <button
-                    type="button"
-                    className="product-list-pagination_btn"
-                    onClick={goNext}
-                    disabled={safePage >= totalPages}
-                  >
-                    Trang sau →
+    <div className="container">
+      {/* Phần Bộ sưu tập */}
+      <section className="product-section">
+        <h2 className="section-title">BO SUU TAP NAM 2026</h2>
+        <div className="product-grid">
+          {visibleProducts.map((product) => (
+            <div key={product.id} className="product-item">
+              <div className="product-card-custom">
+                <div className="product-image">
+                  <img src={product.image} alt={product.name} />
+                </div>
+                <div className="product-info-custom">
+                  <h3 className="product-name">San pham</h3>
+                  <p className="product-price">Gia: {product.price || '50.000d'}</p>
+                  <button className="add-to-cart-btn">
+                    <i className="fa-solid fa-cart-plus"></i> {/* Dùng FontAwesome hoặc icon tương đương */}
+                    <span>🛒</span> 
                   </button>
                 </div>
-              )}
-            </>
-          )}
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
+        
+        <div className="view-more-wrapper">
+          <button className="btn-view-more">Xem thêm</button>
+        </div>
+      </section>
+
+      {/* Phần Sản phẩm nổi bật */}
+      <section className="product-section">
+        <h2 className="section-title">SAN PHAM NOI BAT</h2>
+        {/* Bạn có thể tái sử dụng grid ở đây */}
+      </section>
     </div>
   );
 };
