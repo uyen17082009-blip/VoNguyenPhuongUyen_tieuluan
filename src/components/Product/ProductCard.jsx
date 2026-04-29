@@ -1,36 +1,25 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { ShoppingCart, Heart } from 'lucide-react';
 import './ProductCard.css';
-
-const productsUrl = `${import.meta.env.BASE_URL}product.json`;
-
 
 const ProductCard = ({ product }) => {
     const navigate = useNavigate();
     const [isLoading, setIsLoading] = useState(false);
-    const [error, setError] = useState(null);
 
-    const handleBuy = async () => {
+    const handleAction = async (e) => {
+        e.stopPropagation();
         setIsLoading(true);
-        setError(null);
         try {
-            const response = await fetch(productsUrl); if (!response.ok) {
-                throw new Error('Không thể tải thông tin sản phẩm');
-            }
+            const response = await fetch(`${import.meta.env.BASE_URL}products.json`);
             const data = await response.json();
-            const matchedProduct = data.find((item) => item.id === product.id);
-            if (!matchedProduct) {
-                throw new Error('Sản phẩm không tồn tại');
-            }
+            const matched = data.find((item) => item.id === product.id);
+
             navigate(`/product/${product.id}`, {
-                state: {
-                    product: {
-                        ...matchedProduct, image: product.image
-                    }
-                }
+                state: { product: { ...matched, image: product.image } }
             });
         } catch (err) {
-            setError(err.message);
+            console.error("Lỗi điều hướng:", err);
         } finally {
             setIsLoading(false);
         }
@@ -38,41 +27,41 @@ const ProductCard = ({ product }) => {
 
     return (
         <div className="product-card">
-            <div className="product-image-container">
+            <div className="heart-icon-wrapper">
+                <Heart size={24} color="#333" strokeWidth={1.5} />
+            </div>
+
+            <div className="product-image-container" onClick={handleAction}>
                 <img 
                     src={product.image || 'https://via.placeholder.com/300x200'}
-
+                    
                     alt={product.name}
                     className="product-image"
                 />
             </div>
 
-            <h3 className="product-name">{product.name}</h3>
-
-            <div className="product-ram-ssd">
-                <button className='ram-ssd-tag'>{product.sizeS}</button>
-                <button className='ram-ssd-tag'>{product.sizeM}</button>
-                <button className='ram-ssd-tag'>{product.sizeL}</button>
-            </div>
-
-            <div className="product-pricing">
-                <div className="current-price">{product.currentPrice}</div>
-                <div className="original-price-section">
-                    <span className="original-price">{product.originalPrice}</span>
-                    {product.discount && <span className="discount">{product.discount}</span>}
+            <div className="product-info-box">
+                <div className="product-name-label">
+                    {product.name}
+                </div>
+                <div className="product-sizes">
+                    {product.sizeS && <span className="size-tag">{product.sizeS}</span>}
+                    {product.sizeM && <span className="size-tag">{product.sizeM}</span>}
+                    {product.sizeL && <span className="size-tag">{product.sizeL}</span>}
                 </div>
             </div>
 
-            <div className="product-rating-sales">
-                <span className="rating">{product.rating}</span>
-                <span className="sales">Đã bán {product.sold}</span>
+            <div className="product-price-box">
+                <div className="price-stack">
+                    <span className="current-price">{product.currentPrice}</span>
+                    <span className="original-price">{product.originalPrice}</span>
+                </div>
+                <button className="cart-btn" onClick={handleAction} disabled={isLoading}>
+                    {isLoading ? '...' : <ShoppingCart size={22} />}
+                </button>
             </div>
-
-            <button className="compare-button" onClick={handleBuy} disabled={isLoading}>
-                {isLoading ? 'Đang mở...' : 'Mua'}
-            </button>
-            {error && <div className="error-text">{error}</div>}
         </div>
     );
 };
-export default ProductCard; 
+
+export default ProductCard;
