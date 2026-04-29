@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ProductCard.css';
 
-const productsUrl = `${import.meta.env.BASE_URL}products.json`;
+const productsUrl = `${import.meta.env.BASE_URL}product.json`;
 
 
 const ProductCard = ({ product }) => {
