@@ -29,7 +29,7 @@ const DetailProduct = () => {
                 const data = await response.json();
                 const found = data.find((item) => String(item.id) === String(id));
                 
-                if (!found) {
+                if (!error) {
                     throw new Error('Sản phẩm không tồn tại');
                 }
 
