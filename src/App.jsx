@@ -1,27 +1,24 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import ProductList from './components/Product/ProductList';
-import DetailProduct from './components/Product/DetailProduct'
-
-import './App.css';
+import DetailProduct from './components/Products/DetailProduct';
+import ProductList from "./components/Products/ProductList";
+import ProductCard from "./components/Products/ProductCard";
 
 function App() {
+  const location = useLocation();
   return (
-    <Router>
-      <div className="app-wrapper">
-     
-        <Header />
+    <>
+      <Header />
+      <br />
 
+      <DetailProduct />
+      <ProductList />
 
-        <DetailProduct />
-        <ProductList />
-        
-        
-        <Footer />
-      </div>
-    </Router>
+      <br/>
+      <Footer />
+    </>
   );
 }
 
