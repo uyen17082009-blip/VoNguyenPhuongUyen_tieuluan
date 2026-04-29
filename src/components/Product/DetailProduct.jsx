@@ -1,39 +1,28 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation, useParams, useNavigate } from 'react-router-dom';
+import ProductCard from './ProductCard';
+import {imageMap} from '../../utils/productImages';
+import './ProductList.css';
 
-
-const DetailProduct = () => {
-    const { id } = useParams();
-    const navigate = useNavigate();
-    const location = useLocation();
-    const [product, setProduct] =
-        useState(location.state?.product || null);
-    const [isLoading, setIsLoading] =
-        useState(!location.state?.product);
+const ProdutList = () => {
+    const [products, setProducts] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        if (product) return;
-
-        const fetchProduct = async () => {
+        const loadProducts = async () => {
             try {
-                const response = await
-                    fetch('/product.json');
+                const response = await fetch('/products.json');
                 if (!response.ok) {
-                    throw new Error('Không thể tải thông tin sản phẩm');
+                    throw new Error('không thể tải dữ liệu sản phẩm');
                 }
 
                 const data = await response.json();
-                const found = data.find((item) =>
-                    String(item.id) === String(id));
-                if (!found) {
-                    throw new Error('Sản phẩm không tồn tại');
-                }
+                const mappedProducts = data.map((item) => ({
+                    ...item,
+                    image: imageMap[item.imageKey] || item.image
+                }));
 
-                setProduct({
-                    ...found,
-                    image: imageMap[found.imageKey] || found.image
-                });
+                setProducts(mappedProducts);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -41,79 +30,30 @@ const DetailProduct = () => {
             }
         };
 
-        fetchProduct();
-    }, [id, product]);
+        loadProducts();
+    }, []);
 
     if (isLoading) {
-        return <div className="detail-container">Đang tải chi tiết sản phẩm...</div>;
-    }
-    if (error) {
-        return <div className="detail-container">Lỗi:{error}</div>;
+        return <div className="product-list-container">
+            Đang tải sản phẩm...
+            </div>;
     }
 
-    if (!product) {
-        return null;
+    if (error) {
+        return <div className="product-list-container">
+            Lỗi: {eror}
+        </div>;
     }
 
     return (
-        <div className="detail-container">
-            <button className="back-button" onClick={() => navigate(-1)}>
-                Quay lại
-            </button>
-
-            <div className="detail-card">
-                <div className="detail-image">
-                    <img
-                        src={product.image || 'https://via.placeholder.com/500x350'}
-                        alt={product.name}
-                    />
-                </div>
-
-                <div className="detail-info">
-                    <h2>{product.name}</h2>
-                    <p className="detail-price">
-                        <span className="current-price">{product.currentPrice}</span>
-                        {product.originalPrice && (
-                            <span className="original-price">{product.originalPrice}</span>
-                        )}
-                        {product.discount && <span className="discount">{product.discount}</span>}
-                    </p>
-
-                    <div className="detail-sizes">
-                        <button className="ram-ssd-tag">{product.sizeS}</button>
-                        <button className="ram-ssd-tag">{product.sizeM}</button>
-                        <button className="ram-ssd-tag">{product.sizeL}</button>
-                    </div>
-
-                    <div className="detail-meta">
-                        {product.rating && <span>star{product.rating}</span>}
-                        {product.sold && <span>Đã bán{product.sold}</span>}
-                    </div>
-                    <button className="buy-now-button" onClick={() => {
-                        const savedCart = localStogare.getItem('cart');
-                        const cart = savedCart ? JSON.parse(savedCart) : [];
-                        const existingItemIndex = cart.findIndex(item => item.id === product.id);
-
-                        if (existingItemIndex >= 0) {
-                            cart[existingItemIndex].quantity += 1;
-                        } else {
-                            cart.push({
-                                ...product,
-                                quantity: 1
-                            });
-                        }
-
-                        localStogare.setItem('cart', JSON.stringify(cart));
-                        window.dispatchEvent(new Event('cartUpdated'));
-
-                        navigate('/cart');
-                    }}>
-                        Mua ngay
-                    </button>
-                </div>
+        <div className="product-list-container">
+            <div className="product-list">
+                {products.map((product) => (
+                    <ProductCard key={product.id} product={product} />
+                ))}
             </div>
         </div>
     );
 };
 
-export default DetailProduct;
+export default ProdutList;
