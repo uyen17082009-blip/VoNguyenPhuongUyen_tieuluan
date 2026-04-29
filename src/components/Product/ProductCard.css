@@ -5,19 +5,19 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    transition: box-shadow 0.3s, tranform 0.3s;
+    transition: box-shadow 0.3s, transform 0.3s;
     overflow: hidden;
     height: 100%;
     align-items: stretch;
 }
 
-.product-card:hover{
+.product-card:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
 }
 
 .product-top-banner {
-    background-color: #f5f5f5 ;
+    background-color: #f5f5f5;
     padding: 8px 12px;
     font-size: 12px;
     color: #333;
@@ -26,7 +26,7 @@
 }
 
 .product-image-container {
-    padding:15px ;
+    padding: 15px;
     text-align: center;
     background-color: #fafafa;
     min-height: 200px;
@@ -35,7 +35,7 @@
     justify-content: center;
 }
 
-.product-image{
+.product-image {
     width: 100%;
     max-width: 250px;
     height: auto;
@@ -68,7 +68,7 @@
     flex-wrap: wrap;
 }
 
-.spec-tag{
+.spec-tag {
     background-color: #f0f0f0;
     color: #333;
     padding: 4px 10px;
@@ -88,15 +88,16 @@
     align-items: flex-start;
 }
 
-.product-ram-ssd{
+.product-ram-ssd {
     display: flex;
     gap: 8px;
     padding: 0 15px;
     margin-bottom: 12px;
 }
 
-.ram-ssd-tag{
-    background:linear-gradient(135deg, #fdf3e7 0%, #ffe9d6 100%);
+.ram-ssd-tag {
+    background: linear-gradient(135deg, #fdf3e7 0%,
+            #ffe9d6 100%);
     color: #d35400;
     padding: 6px 12px;
     border-radius: 6px;
@@ -105,7 +106,7 @@
     border: 1px solid #ffc38b;
 }
 
-.product-pricing{
+.product-pricing {
     padding: 0 15px;
     margin-bottom: 10px;
     min-height: 50px;
@@ -114,37 +115,41 @@
     justify-content: flex-start;
 }
 
-.current-price{
+.current-price {
     font-size: 20px;
     font-weight: bold;
     color: #e53935;
     margin-bottom: 4px;
 }
 
-.original-price-section{
+.original-price-section {
     display: flex;
     align-items: center;
-    gap:8px;
+    gap: 8px;
 }
 
-.original-price{
+.original-price {
     font-size: 14px;
     color: #999;
     text-decoration: line-through;
 }
+
 .discount {
     font-size: 12px;
     color: #e53935;
     font-weight: 500;
 }
+
 .product-gift {
+
     padding: 0 15px;
     margin-bottom: 12px;
     font-size: 13px;
     color: #0066cc;
     font-weight: 500;
 }
-.product-specs{
+
+.product-specs {
     padding: 0 15px;
     margin: 0 0 15px 0;
     list-style: none;
@@ -153,16 +158,16 @@
     line-height: 1.8;
 }
 
-.product-specs li{
+.product-specs li {
     margin-bottom: 6px;
 }
 
-.product-specs strong{
+.product-specs strong {
     color: #333;
     font-weight: 600;
 }
 
-.product-rating-sales{
+.product-rating-sales {
     padding: 0 15px;
     margin-bottom: 15px;
     display: flex;
@@ -170,16 +175,18 @@
     gap: 15px;
     font-size: 13px;
 }
-.rating{
+
+.rating {
     color: #f57c00;
     font-weight: 500;
 }
-.sales{
+
+.sales {
     color: #666;
 }
 
-.compare-button{
-    margin: auto 15px 15px 15px ;
+.compare-button {
+    margin: auto 15px 15px 15px;
     margin-top: auto;
     padding: 10px;
     background-color: #0066cc;
@@ -191,30 +198,34 @@
     cursor: pointer;
     transition: background-color 0.3s;
 }
-.compare-button:hover{
-    background-color: #0052a3;
 
+.compare-button:hover {
+    background-color: #0052a3;
 }
-.compare-button:disabled{
+
+.compare-button:disabled {
     background-color: #94a3b8;
     cursor: not-allowed;
 }
-.error-text{
+
+.error-text {
     margin: 8px 15px 12px;
     color: #e53935;
     font-size: 13px;
 }
-@media (max-width: 768px){
-    .product-image{
+
+@media (max-width: 768px) {
+    .product-image {
         max-width: 200px;
     }
-    .current-price{
+
+    .current-price {
         font-size: 18px;
     }
-    .product-name{
+
+    .product-name {
         font-size: 18px;
         min-height: 35px;
         color: #0066cc;
     }
 }
-
