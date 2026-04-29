@@ -11,7 +11,7 @@ const ProductList = () => {
     useEffect(() => {
         const loadProducts = async () => {
             try {
-                const response = await fetch('/products.json');
+                const response = await fetch('/product.json');
                 if (!response.ok) {
                     throw new Error('không thể tải dữ liệu sản phẩm');
                 }
