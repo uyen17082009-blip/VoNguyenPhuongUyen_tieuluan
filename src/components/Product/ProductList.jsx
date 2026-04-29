@@ -3,7 +3,7 @@ import ProductCard from './ProductCard';
 import {imageMap} from '../../utils/productImages';
 import './ProductList.css';
 
-const ProdutList = () => {
+const ProductList = () => {
     const [products, setProducts] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -56,4 +56,4 @@ const ProdutList = () => {
     );
 };
 
-export default ProdutList;
+export default ProductList;
