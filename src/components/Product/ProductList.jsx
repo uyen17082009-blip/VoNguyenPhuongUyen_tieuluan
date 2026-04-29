@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
 import './ProductList.css';
-import sp1Image from '../../img/sp1.PNG';
-import sp2Image from '../../img/sp2.PNG';
-import sp3Image from '../../img/sp3.PNG';
+import sp1Image from '../../img/sp1.png';
+import sp2Image from '../../img/sp2.jpg';
+import sp3Image from '../../img/sp3.jpg';
 
 const imageMap = {
     sp1: sp1Image,
