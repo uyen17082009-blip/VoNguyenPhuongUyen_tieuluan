@@ -71,7 +71,7 @@ const ProductCard = ({ product }) => {
             <button className="compare-button" onClick={handleBuy} disabled={isLoading}>
                 {isLoading ? 'Đang mở...' : 'Mua'}
             </button>
-            {error && <div className="error-text">{error}</div>}
+
         </div>
     );
 };
