@@ -21,7 +21,7 @@ const DetailProduct = () => {
         const fetchProduct = async () => {
             setIsLoading(true);
             try {
-                const response = await fetch('/products.json');
+                const response = await fetch('/product.json');
                 if (!response.ok) {
                     throw new Error('Không thể tải thông tin sản phẩm');
                 }
