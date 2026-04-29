@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
                 throw new Error('Không thể tải thông tin sản phẩm');
             }
             const data = await response.json();
-            const matchedProduct = data.find((item) => item.id === product.id);
+            const matchedProduct = data.find((item) => String(item.id) === String(product.id));
             if (!matchedProduct) {
                 throw new Error('Sản phẩm không tồn tại');
             }
