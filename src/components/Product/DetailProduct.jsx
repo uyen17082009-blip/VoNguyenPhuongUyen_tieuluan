@@ -33,9 +33,9 @@ const DetailProduct = () => {
                     throw new Error('Sản phẩm không tồn tại');
                 }
 
-                setProduct({
-                    ...found,
-                    image: imageMap[found.imageKey] || found.image
+               setProduct({
+                ...found,
+                image: imageMap[found.imageKey] || found.image
                 });
             } catch (err) {
                 setError(err.message);
