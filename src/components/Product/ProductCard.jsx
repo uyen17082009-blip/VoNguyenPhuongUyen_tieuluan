@@ -6,8 +6,6 @@ const ProductCard = ({ product }) => {
     const navigate = useNavigate();
 
     const handleGoToDetail = () => {
-        // Thay vì fetch lại, ta dùng ngay dữ liệu 'product' đang có trong props
-        // Điều này giúp trang Detail hiện lên ngay lập tức (Instant)
         navigate(`/product/${product.id}`, {
             state: { product } 
         });
@@ -50,7 +48,7 @@ const ProductCard = ({ product }) => {
             </div>
 
             <button className="compare-button" onClick={(e) => {
-                e.stopPropagation(); // Ngăn sự kiện click lan ra ngoài thẻ div cha
+                e.stopPropagation(); 
                 handleGoToDetail();
             }}>
                 Mua
