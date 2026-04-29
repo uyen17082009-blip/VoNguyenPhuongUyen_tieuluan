@@ -20,7 +20,7 @@ const ProductList = () => {
 
                 const data = await response.json();
                 
-                // Map dữ liệu để gắn ảnh từ imageMap
+
                 const mappedProducts = data.map((item) => ({
                     ...item,
                     image: imageMap[item.imageKey] || item.image
