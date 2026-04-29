@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useParams, useNavigate } from 'react-router-dom';
-import {imageMap} from '../../utils/productImages';
+import { imageMap } from '../../utils/productImages';
 import './DetailProduct.css';
 
 const DetailProduct = () => {
@@ -13,8 +13,8 @@ const DetailProduct = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        if (product) {
-            setIsLoading(false);
+        // Nếu đã có dữ liệu từ state (đi từ danh sách sang), không cần fetch lại
+        if (location.state?.product) {
             return;
         }
 
@@ -22,16 +22,12 @@ const DetailProduct = () => {
             setIsLoading(true);
             try {
                 const response = await fetch('/product.json');
-                if (!response.ok) {
-                    throw new Error('Không thể tải thông tin sản phẩm');
-                }
+                if (!response.ok) throw new Error('Không thể tải thông tin sản phẩm');
 
                 const data = await response.json();
                 const found = data.find((item) => String(item.id) === String(id));
                 
-                if (!found) {
-                    throw new Error('Sản phẩm không tồn tại');
-                }
+                if (!found) throw new Error('Sản phẩm không tồn tại');
 
                 setProduct({
                     ...found,
@@ -45,28 +41,25 @@ const DetailProduct = () => {
         };
 
         fetchProduct();
-    }, [id, product]);
+    }, [id]); // Chỉ chạy lại khi ID thay đổi
 
     const handleBuyNow = () => {
         if (!product) return;
 
         const savedCart = localStorage.getItem('cart');
         const cart = savedCart ? JSON.parse(savedCart) : [];
-
         const existingItemIndex = cart.findIndex(item => item.id === product.id);
 
         if (existingItemIndex >= 0) {
             cart[existingItemIndex].quantity += 1;
         } else {
-            cart.push({
-                ...product,
-                quantity: 1
-            });
+            cart.push({ ...product, quantity: 1 });
         }
 
         localStorage.setItem('cart', JSON.stringify(cart));
         
-        window.dispatchEvent(new Event('storage')); 
+        // Kích hoạt sự kiện để Header cập nhật số lượng giỏ hàng ngay lập tức
+        window.dispatchEvent(new Event('cartUpdated'));
         
         navigate('/cart');
     };
@@ -113,21 +106,9 @@ const DetailProduct = () => {
                         {product.sold && <span> Đã bán {product.sold}</span>}
                     </div>
 
-                    <button className="buy-now-button" onClick={() => {const savedCart = localStorage.getItem('cart');
-                        const cart = savedCart ? JSON.parse(savedCart) : [];
-                        const existingItemIndex = cart.findIndex(item => item.id === product.id);
-
-                        if (existingItemIndex >= 0) {
-                            cart[existingItemIndex].quantity += 1;
-                        } else {
-                            cart.push({...product, quantity: 1
-                            });
-                        }
-                        localStorage.setItem('cart',JSON.stringify(cart));
-                        window.dispatchEvent(new Event('cartUpdated'));
-                        navigate('/cart');
-                        }}>
-                            Mua ngay
+                    {/* Gọi hàm handleBuyNow đã khai báo ở trên */}
+                    <button className="buy-now-button" onClick={handleBuyNow}>
+                        Mua ngay
                     </button>
                 </div>
             </div>
