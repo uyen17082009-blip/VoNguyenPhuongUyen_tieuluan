@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
-// Kiểm tra lại tên file productImage có 's' hay không nhé
-import { imageMap } from '../../utils/productImages'; 
+import { imageMap } from '../../utils/productImage'; 
 import './ProductList.css';
 
 const ProductList = () => {
@@ -12,7 +11,7 @@ const ProductList = () => {
     useEffect(() => {
         const loadProducts = async () => {
             try {
-                // Đảm bảo file này nằm trong thư mục public
+
                 const response = await fetch('/product.json'); 
                 
                 if (!response.ok) {
@@ -49,7 +48,7 @@ const ProductList = () => {
     if (error) {
         return (
             <div className="product-list-container">
-                Lỗi: {error} {/* Đã sửa lỗi chính tả eror -> error */}
+                Lỗi: {error}
             </div>
         );
     }
