@@ -14,12 +14,12 @@ const DetailProduct = () => {
 
     useEffect(() => {
         if (product) {
-            setIsLoading(false);
+            setIsLoading(true);
             return;
         }
 
         const fetchProduct = async () => {
-            setIsLoading(true);
+            setIsLoading(false);
             try {
                 const response = await fetch('/product.json');
                 if (!response.ok) {
