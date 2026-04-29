@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
-import {imageMap} from '../../utils/productImages';
+import {imageMap} from '../../utils/productImage';
 import './ProductList.css';
 
 const ProductList = () => {
