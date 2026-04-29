@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
-import {imageMap} from '../../utils/productImages';
+import {imageMap} from '../../utils/productImage';
 import './ProductList.css';
 
 const ProdutList = () => {
@@ -11,7 +11,7 @@ const ProdutList = () => {
     useEffect(() => {
         const loadProducts = async () => {
             try {
-                const response = await fetch('/products.json');
+                const response = await fetch('/product.json');
                 if (!response.ok) {
                     throw new Error('không thể tải dữ liệu sản phẩm');
                 }
