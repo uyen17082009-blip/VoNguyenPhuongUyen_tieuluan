@@ -5,18 +5,16 @@ import Footer from './components/Footer/Footer';
 import DetailProduct from './components/Product/DetailProduct';
 import ProductList from "./components/Product/ProductList";
 
-
 function App() {
   const location = useLocation();
   return (
     <>
       <Header />
-      <br />
-
-      <DetailProduct />
-      <ProductList />
-
-      <br/>
+      <Routes>
+        <Route path="/" element={<ProductList />} />
+        <Route path="/product" element={<ProductList />} />
+        <Route path="/product/:id" element={<DetailProduct />} />
+      </Routes>
       <Footer />
     </>
   );
