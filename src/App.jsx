@@ -13,7 +13,7 @@ function App() {
     location.pathname === '/login' ||
     location.pathname === '/signup' ||
     location.pathname === '/admin';
-
+s
   return (
     <>
       {!hideChrome && <Header />}
