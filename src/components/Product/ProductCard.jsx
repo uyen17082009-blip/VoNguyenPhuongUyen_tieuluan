@@ -1,66 +1,125 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './ProductCard.css';
+import React, { useEffect, useState, useCallback } from 'react';
+import { useLocation, useParams, useNavigate } from 'react-router-dom';
+import './DetailProduct.css';
+import { imageMap } from '../../utils/productImage';
 
-const ProductCard = ({ product }) => {
+
+const DetailProduct = () => {
+    const { id } = useParams();
     const navigate = useNavigate();
-    const [isLoading, setIsLoading] = useState(false);
+    const location = useLocation();
 
-    const handleAction = async (e) => {
-        e.stopPropagation();
-        setIsLoading(true);
-        try {
-            const response = await fetch(`${import.meta.env.BASE_URL}products.json`);
-            const data = await response.json();
-            const matched = data.find((item) => item.id === product.id);
+    const [product, setProduct] = useState(location.state?.product || null);
+    const [isLoading, setIsLoading] = useState(!location.state?.product);
+    const [error, setError] = useState(null);
 
-            navigate(`/product/${product.id}`, {
-                state: { product: { ...matched, image: product.image } }
-            });
-        } catch (err) {
-            console.error("Lỗi điều hướng:", err);
-        } finally {
-            setIsLoading(false);
-        }
-    };
+    useEffect(() => {
+        if (product) return;
+
+        const fetchProduct = async () => {
+            try {
+                const response = await fetch('/product.json');
+
+                if (!response.ok) {
+                    throw new Error('Không thể tải thông tin sản phẩm');
+                }
+
+                const data = await response.json();
+                const found = data.find((item) => String(item.id) === String(id));
+
+                if (!found) {
+                    throw new Error('Sản phẩm không tồn tại');
+                }
+
+                setProduct({
+                    ...found,
+                    image: imageMap[found.imageKey] || found.image
+                });
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+
+        fetchProduct();
+    }, [id, product]);
+
+    if (isLoading) {
+        return <div className="detail-container">Đang tải chi tiết sản phẩm...</div>;
+    }
+
+    if (error) {
+        return <div className="detail-container">Lỗi:{error}</div>;
+    }
+
+    if (!product) {
+        return null;
+    }
 
     return (
-        <div className="product-card">
-            <div className="heart-icon-wrapper">
-                <Heart size={24} color="#333" strokeWidth={1.5} />
-            </div>
+        <div className="detail-container">
+            <button className="back-button" onClick={() => navigate(-1)}>
+                &larr; Quay lại
+            </button>
 
-            <div className="product-image-container" onClick={handleAction}>
-                <img 
-                    src={product.image || 'https://via.placeholder.com/300x200'}
-                    
-                    alt={product.name}
-                    className="product-image"
-                />
-            </div>
+            <div className="detail-card">
+                <div className="detail-image">
+                    <img
+                        src={product.image || 'https://via.placeholder.com/500x350'}
+                        alt={product.name}
+                    />
+                </div>
 
-            <div className="product-info-box">
-                <div className="product-name-label">
-                    {product.name}
-                </div>
-                <div className="product-sizes">
-                    {product.sizeS && <span className="size-tag">{product.sizeS}</span>}
-                    {product.sizeM && <span className="size-tag">{product.sizeM}</span>}
-                    {product.sizeL && <span className="size-tag">{product.sizeL}</span>}
-                </div>
-            </div>
+                <div className="detail-info">
+                    <h2>{product.name}</h2>
 
-            <div className="product-price-box">
-                <div className="price-stack">
-                    <span className="current-price">{product.currentPrice}</span>
-                    <span className="original-price">{product.originalPrice}</span>
+                    <p className="detail-price">
+                        <span className="current-price">{product.currentPrice}</span>
+                        {product.originalPrice && (
+                            <span className="original-price">{product.originalPrice}</span>
+                        )}
+                        {product.discount && <span className="discount">{product.discount}</span>}
+                    </p>
+
+                    <div className="detail-sizes">
+                        <button className="ram-ssd-tag">{product.sizeS}</button>
+                        <button className="ram-ssd-tag">{product.sizeM}</button><button className="ram-ssd-tag">{product.sizeL}</button>
+                    </div>
+
+                    <div className="detail-meta">
+                        {product.rating && <span>⭐ {product.rating}</span>}
+                        {product.sold && <span> Đã bán {product.sold}</span>}
+                    </div>
+
+                    <button className="buy-now-button" onClick={() => {
+                        const savedCart = localStorage.getItem('cart');
+                        const cart = savedCart ? JSON.parse(savedCart) : [];
+
+                        const existingItemIndex =
+                            cart.findIndex(item => item.id === product.id);
+
+                        if (existingItemIndex >= 0) {
+                            cart[existingItemIndex].quantity += 1;
+                        } else {
+                            cart.push({
+                                ...product,
+                                quantity: 1
+                            });
+                        }
+
+                        localStorage.setItem('cart', JSON.stringify(cart));
+
+                        window.dispatchEvent(newEvent('cartUpdated'));
+
+                        navigate('/cart');
+                    }}>
+                        Mua ngay
+                    </button>
                 </div>
-                <button className="cart-btn" onClick={handleAction} disabled={isLoading}>
-                    {isLoading ? '...' : <ShoppingCart size={22} />}
-                </button>
             </div>
         </div>
     );
 };
 
-export default ProductCard;
+export default DetailProduct;
