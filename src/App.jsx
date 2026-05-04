@@ -5,7 +5,7 @@ import Footer from './components/Footer/Footer';
 import DetailProduct from './components/Products/DetailProduct';
 import ProductList from "./components/Products/ProductList";
 import ProductCard from "./components/Products/ProductCard";
-import Cart from "./components/Pages/Cart";
+
 
 function App() {
   const location = useLocation();
