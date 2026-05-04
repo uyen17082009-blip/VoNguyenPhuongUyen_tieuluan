@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ShoppingCart, Heart } from 'lucide-react';
 import './ProductCard.css';
 
 const ProductCard = ({ product }) => {
