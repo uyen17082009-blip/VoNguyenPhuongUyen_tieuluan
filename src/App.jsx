@@ -1,21 +1,26 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import DetailProduct from './components/Product/DetailProduct';
-import ProductList from "./components/Product/ProductList";
+import DetailProduct from './components/Products/DetailProduct';
+import ProductList from "./components/Products/ProductList";
 
 function App() {
   const location = useLocation();
+  const hideChrome =
+    location.pathname === '/login' ||
+    location.pathname === '/signup' ||
+    location.pathname === '/admin';
+    
   return (
     <>
-      <Header />
+      {!hideChrome && <Header />}
       <Routes>
         <Route path="/" element={<ProductList />} />
         <Route path="/product" element={<ProductList />} />
         <Route path="/product/:id" element={<DetailProduct />} />
       </Routes>
-      <Footer />
+      {!hideChrome && <Footer />}
     </>
   );
 }
