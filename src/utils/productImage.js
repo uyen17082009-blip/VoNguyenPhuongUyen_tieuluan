@@ -1,5 +1,5 @@
 const imageModules = import.meta.glob ('../img/*.{png,jpg,jpeg,webp,gif,svg}', {
-    eager : true;
+    eager : true
 });
 
 const baseName = (path) => {
