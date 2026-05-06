@@ -2,9 +2,8 @@ import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import DetailProduct from './components/Product/DetailProduct';
-import ProductList from "./components/Product/ProductList";
-import ProductCard from "./components/Product/ProductCard";
+import DetailProduct from './components/Products/DetailProduct';
+import ProductList from "./components/Products/ProductList";
 import Cart from "./components/Pages/Cart";
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
     location.pathname === '/login' ||
     location.pathname === '/signup' ||
     location.pathname === '/admin';
-s
   return (
     <>
       {!hideChrome && <Header />}
