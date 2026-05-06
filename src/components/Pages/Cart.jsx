@@ -122,7 +122,7 @@ const Cart = () => {
                   onClick={() => removeItem(item.id)}
                   title="Xóa sản phẩm"
                 >
-                  x
+                  
                 </button>
               </div>
             );
