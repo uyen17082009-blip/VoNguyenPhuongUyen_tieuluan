@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
-import {imageMap} from '../../utils/productImages.js';
+import {imageMap} from '../../utils/productImage.js';
 import './ProductList.css';
 
 const PRODUCTS_PER_PAGE = 6;
