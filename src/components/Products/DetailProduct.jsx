@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation, useParams, useNavigate } from 'react-router-dom';
-import { imageMap } from '../../utils/productImages.js';
+import { imageMap } from '../../utils/productImage.js';
 import './DetailProduct.css';
 
 const DetailProduct = () => {
